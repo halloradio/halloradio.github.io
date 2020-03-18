@@ -1,0 +1,18 @@
+#songPlayPause {
+    bottom: 5vh;
+    /* top: 5vh; */
+
+    right: 6vh;
+
+    height: 15em;
+    width: 15em;
+
+    transition: ease-in-out 0.25s;
+
+    background: url(../img/play.svg);
+    background-size: contain;
+
+    position: fixed;
+    z-index: 20;
+    margin: 3em;
+}

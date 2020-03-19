@@ -1,11 +1,9 @@
 #songPlayPause {
-    bottom: 5vh;
-    /* top: 5vh; */
+    bottom: 1vh;
+    right: 0;
 
-    right: 6vh;
-
-    height: 15em;
-    width: 15em;
+    height: 10em;
+    width: 10em;
 
     transition: ease-in-out 0.25s;
 
@@ -14,5 +12,25 @@
 
     position: fixed;
     z-index: 20;
-    margin: 3em;
+    margin: 2em;
+}
+
+@media (min-width:450px) { 
+
+    #songPlayPause {
+        bottom: 3vh;
+        right: 1em;
+        height: 15em;
+        width: 15em;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    #songPlayPause {
+        bottom: 3vh;
+        right: 1em;
+        margin: 0 6em 4em 0;
+    }
+    
 }

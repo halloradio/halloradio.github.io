@@ -126,6 +126,21 @@ h2#info_text {
     div#info_playing {
         left: 1em;
     }
+                    .marquee {
+                        font-family: AkzidGrtsk;
+                        width: 100vh;
+                        height: 100vh;
+                        transform: rotate(90deg);
+                        position: fixed;
+                        z-index: 3;
+                        right: 0;
+                        word-spacing: 0.8vw;
+                        font-size: 3vh;
+                        line-height: 4.5vh;
+                        white-space: nowrap;
+                        text-transform: uppercase;
+                    
+                    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -141,21 +156,6 @@ h2#info_text {
     }
     h2#info_text {
         color: #eeff00;
-    }
-    .marquee {
-        font-family: AkzidGrtsk;
-        width: 100vh;
-        height: 100vh;
-        transform: rotate(90deg);
-        position: fixed;
-        z-index: 3;
-        right: 0;
-        word-spacing: 0.8vw;
-        font-size: 3vh;
-        line-height: 4.5vh;
-        white-space: nowrap;
-        text-transform: uppercase;
-
     }
 }
 

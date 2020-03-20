@@ -5,7 +5,8 @@
 (function () {
 
     window.addEventListener('load', function () {
-
+        
+        var timeOutId = 0;
 
         var xmlhttp = new XMLHttpRequest();
 

@@ -2,101 +2,6 @@
 //https://streamhalloradio.out.airtime.pro/streamhalloradio_a
 
 
- test = {
-    "env": "production",
-    "schedulerTime": "2020-03-20 16:12:54",
-    "previous": {
-        "starts": "2020-03-20 14:26:39.790600",
-        "ends": "2020-03-20 14:30:26.000000",
-        "type": "track",
-        "name": "Labor - 200226.mp3",
-        "metadata": {
-            "id": 1,
-            "name": "",
-            "mime": "audio\/mp3",
-            "ftype": "audioclip",
-            "directory": null,
-            "filepath": "200226.mp3",
-            "import_status": 0,
-            "currentlyaccessing": 0,
-            "editedby": null,
-            "mtime": "2020-03-18 17:58:48",
-            "utime": "2020-03-18 17:58:19",
-            "lptime": "2020-03-20 14:26:43",
-            "md5": "a42752af0fdcb50157685f54e2bbe43f",
-            "track_title": "200226.mp3",
-            "artist_name": "Labor",
-            "bit_rate": 320007,
-            "sample_rate": 44100,
-            "format": null,
-            "length": "00:52:30.976871",
-            "album_title": null,
-            "genre": null,
-            "comments": "",
-            "year": null,
-            "track_number": 0,
-            "channels": 2,
-            "url": null,
-            "bpm": null,
-            "rating": null,
-            "encoded_by": null,
-            "disc_number": null,
-            "mood": null,
-            "label": null,
-            "composer": null,
-            "encoder": null,
-            "checksum": null,
-            "lyrics": null,
-            "orchestra": null,
-            "conductor": null,
-            "lyricist": null,
-            "original_lyricist": null,
-            "radio_station_name": null,
-            "info_url": null,
-            "artist_url": null,
-            "audio_source_url": null,
-            "radio_station_url": null,
-            "buy_this_url": null,
-            "isrc_number": null,
-            "catalog_number": null,
-            "original_artist": null,
-            "copyright": null,
-            "report_datetime": null,
-            "report_location": null,
-            "report_organization": null,
-            "subject": null,
-            "contributor": null,
-            "language": null,
-            "soundcloud_id": null,
-            "soundcloud_error_code": null,
-            "soundcloud_error_msg": null,
-            "soundcloud_link_to_file": null,
-            "soundcloud_upload_time": null,
-            "replay_gain": "-5.08",
-            "owner_id": 1,
-            "cuein": "00:00:02.856259",
-            "cueout": "00:52:21.127347",
-            "hidden": false,
-            "filesize": 126041915,
-            "description": null,
-            "cloud_file_id": 1,
-            "file_artwork_id": null
-        }
-    },
-    "current": null,
-    "next": null,
-    "currentShow": [
-
-    ],
-    "nextShow": [
-
-    ],
-    "source_enabled": "Scheduled",
-    "timezone": "Europe\/Berlin",
-    "timezoneOffset": "3600",
-    "AIRTIME_API_VERSION": "1.1"
-}
-
 
 window.addEventListener('load', function () {
     //we store out timerIdhere
@@ -117,7 +22,7 @@ window.addEventListener('load', function () {
                     // $.get(this.url);
                     // response.current = null;
 
-                    if (test.current != null){
+                    if (response.current != null){
 
                         // console.log(test);
                         let name = "On Air";
@@ -146,7 +51,7 @@ window.addEventListener('load', function () {
     
                         document.querySelector("#info_side_text").style.animation = "marquee 25s linear infinite;";
 
-                        // reloadStylesheets();
+                        reloadStylesheets();
 
                     } else {
     

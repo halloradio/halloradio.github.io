@@ -102,6 +102,7 @@ div#info_playing{
     text-align: center;
     padding-top: 2em;
     padding-bottom: 2em;
+    /* width: 25em; */
     /* margin-right: 12px; */
     /* margin-bottom: 2em; */
     overflow: hidden;
@@ -115,14 +116,16 @@ h2#info_text {
 
 @media (min-width: 450px) {
     div#info_playing {
-        width: 25em;
-        /* left: 0.5em; */
+        left: 1%;
+        right: 1%;
+        width: 90%;
     }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     div#info_playing {
+        width: 25em;
         left: 1em;
     }
                     .marquee {

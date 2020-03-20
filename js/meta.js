@@ -5,16 +5,18 @@
 (function () {
 
     window.addEventListener('load', function () {
+
+
         var xmlhttp = new XMLHttpRequest();
 
         xmlhttp.onreadystatechange = function () {
-            
+                    
             if (this.readyState == 4 && this.status == 200) {
 
                 var myObj = JSON.parse(this.responseText);
                 
-       
-                // console.log(myObj);
+                console.log(myObj);
+               
 
                 if (myObj.current != null) {
 
@@ -31,11 +33,7 @@
                 } else {
 
                     document.getElementById("info_text").innerHTML = "Not on Air";
-                    // document.getElementById("info_text").style.padding = "2em";
-                    // document.getElementById("info_text").style.fontSize = "20px";
-                    // document.getElementById("info_text").style.left = "10em";
-
-
+                
 
                     let insert = "<span class='dot'></span>" + " Not On Air " + "<span class='dot'></span>" + " Not On Air " + "<span class='dot'></span>" + " Not On Air " + "<span class='dot'></span>" + " Not On Air ";
 
@@ -44,9 +42,9 @@
                     document.querySelector("#info_side_text").style.animation = "none";
 
                 }
-            } else if (this.status === 404){
+            } else if (this.status === 400){
                 console.log(this.status);
-                window.open("What");
+                // window.open("What");
             }
 
 

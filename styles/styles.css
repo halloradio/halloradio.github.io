@@ -96,14 +96,13 @@ div#info_playing{
     font-size: 20px;
     position: absolute;
     top: 5em;
-    /* bottom: 5em; */
-    width: 100%;
+    /* width: 90%; */
     border: 4px solid;
     border-radius: 30px;
     text-align: center;
     padding-top: 2em;
     padding-bottom: 2em;
-    margin-right: 12px;
+    /* margin-right: 12px; */
     /* margin-bottom: 2em; */
     overflow: hidden;
 }
@@ -117,7 +116,7 @@ h2#info_text {
 @media (min-width: 450px) {
     div#info_playing {
         width: 25em;
-        left: 0.5em;
+        /* left: 0.5em; */
     }
 }
 

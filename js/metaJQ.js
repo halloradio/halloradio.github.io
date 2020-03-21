@@ -122,7 +122,7 @@ window.addEventListener('load', function () {
                     clearTimeout(timeOutId); //stop the timeout
                 } else {
 
-                    timeOutId = setTimeout(ajaxFn, 10000); //set the timeout again
+                    timeOutId = setTimeout(ajaxFn, 900000); //set the timeout again
                     console.log("call"); //check if this is running
                     console.table(response.current); //check if this is running
 
@@ -178,7 +178,7 @@ window.addEventListener('load', function () {
     }
     ajaxFn(); //we CALL the function we stored 
 
-    timeOutId = setTimeout(ajaxFn, 600000);
+    timeOutId = setTimeout(ajaxFn, 900000);
 
     function reloadStylesheets() {
         var queryString = '?reload=' + new Date().getTime();

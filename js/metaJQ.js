@@ -88,7 +88,7 @@ test = {
         {
             "start_timestamp": "2020-03-20 16:33:00",
             "end_timestamp": "2020-03-20 17:33:00",
-            "name": "jqwoijd",
+            "name": "Super coole tmf show yeah",
             "description": "ads",
             "id": 5,
             "instance_id": 5,
@@ -153,7 +153,7 @@ window.addEventListener('load', function () {
 
                         // console.log(response.currentShow[0].name);
 
-                        let insert = "<span class='dot'></span>" + " On Air " + "<span class='dot'></span> " + name + " <span class='dot'></span>" + " On Air " + "<span class='dot'></span>" + " Hallo:Radio ";
+                        let insert = "<span class='dot'></span>" + " ON AIR " + "<span class='dot'></span> " + name + " <span class='dot'></span>" + " ON AIR " + "<span class='dot'></span>" + " Hallo:Radio ";
 
                         document.querySelector("#info_side_text").innerHTML = "<span id='first'>" + insert + "</span>" + "<span id='sec'>" + insert + "</span>";
 
@@ -161,12 +161,12 @@ window.addEventListener('load', function () {
 
                         reloadStylesheets();
 
-                    } else {
+                    } else{
 
-                        document.getElementById("info_text").innerHTML = "Not on Air";
+                        document.getElementById("info_text").innerHTML = "NOT ON AIR";
 
 
-                        let insert = "<span class='dot'></span>" + " Not On Air " + "<span class='dot'></span>" + " Not On Air " + "<span class='dot'></span>" + " Not On Air " + "<span class='dot'></span>" + " Not On Air ";
+                        let insert = "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + "  NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR ";
 
                         document.querySelector("#info_side_text").innerHTML = "<span id='first'>" + insert + "</span>" + "<span id='sec'>" + insert + "</span>";
 

@@ -8,15 +8,15 @@ body{
 /* } */
 
 @font-face {
-    font-family: AkzidGrtsk;
-    src: url("../font/AkzidGrtskProReg_0.otf");
+    font-family: Cadiz;
+    src: url("../font/Cadiz-Regular.otf");
 }
 
 div#tt{
    
     margin: auto;
     position: relative;
-    font-family: AkzidGrtsk;
+    font-family: Cadiz;
     display: grid;
     grid-template-columns: auto 4em 9fr;
     /* grid-template-columns: 180px 200px auto 40px; */

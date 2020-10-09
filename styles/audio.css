@@ -1,0 +1,39 @@
+#songPlayPause {
+    grid-area: playpause;
+    position: relative;
+    height: 5em;
+    min-width: 5em;
+    padding: 1em;
+
+    /* transition: ease-in-out 0.25s; */
+
+    background: url(../img/play.svg);
+    background-size: contain;
+    
+}
+   #playwrap {
+    padding: 0.6em;
+   }
+
+@media (max-width:885px) { 
+    #playwrap {
+        /* background-color: ; */
+        /* min-height: 6em;  */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        /* border: solid 1em #3b414d; */
+        /* border-top: solid 0.35em #3b414d; */
+        background-color:#3b414d;
+        padding: 1em;
+        position: fixed;
+        padding-right: 1em;
+        
+        bottom: 0em;
+        right: 0em;
+        z-index: 3;
+
+    }
+}
+ 

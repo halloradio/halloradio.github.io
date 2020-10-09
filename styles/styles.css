@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    letter-spacing: 0.05em;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cbcbcb;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: AkzidGrtsk;
+    src: url("../font/AkzidGrtskProReg_0.otf");
+}
+/* fe4728 */
+
+
+
+div#wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url('../img/hallo.jpg'); */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+    /* overflow: hidden; */
+    
+    
+}
+
+
+@media (max-width:760px) { 
+    #songPlayPause {
+        overflow: hidden;
+        
+    }
+}
+ 
+

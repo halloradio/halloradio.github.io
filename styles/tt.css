@@ -31,7 +31,7 @@ div#tt{
     border: solid .5em #3b414d;
     min-height: 100vh;
     
-    width: 55em;
+    /* width: 55em; */
     /* overflow: scroll; */
 }
 

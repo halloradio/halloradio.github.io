@@ -154,6 +154,8 @@ window.addEventListener('load', function () {
                         // console.log(response.currentShow[0].name);
 
                         let insert = "<span class='dot'></span>" + " ON AIR " + "<span class='dot'></span> " + name + " <span class='dot'></span>" + " ON AIR " + "<span class='dot'></span>" + " Hallo:Radio ";
+                        
+                        insert+=insert;
 
                         document.querySelector("#info_side_text").innerHTML = "<span id='first'>" + insert + "</span>" + "<span id='sec'>" + insert + "</span>";
 
@@ -166,7 +168,7 @@ window.addEventListener('load', function () {
                         document.getElementById("info_text").innerHTML = "NOT ON AIR";
 
 
-                        let insert = "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + "  NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR ";
+                        let insert = "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + "  NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR ";
 
                         document.querySelector("#info_side_text").innerHTML = "<span id='first'>" + insert + "</span>" + "<span id='sec'>" + insert + "</span>";
 

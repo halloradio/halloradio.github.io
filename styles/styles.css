@@ -17,8 +17,6 @@ body{
 }
 /* fe4728 */
 
-
-
 div#wrapper {
     position: absolute;
     width: 100vw;
@@ -30,7 +28,6 @@ div#wrapper {
     /* background-position: center; */
     /* background-attachment: fixed; */
     /* overflow: hidden; */
-    
     
 }
 

@@ -15,6 +15,10 @@ body{
     font-family: AkzidGrtsk;
     src: url("../font/AkzidGrtskProReg_0.otf");
 }
+@font-face {
+    font-family: Keroine-DouxExtreme;
+    src: url("../font/Keroine-DouxExtreme.otf");
+}
 /* fe4728 */
 
 div#wrapper {

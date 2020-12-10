@@ -1,15 +1,27 @@
 #myModal{
-	/* background: green; */
 	overflow: hidden;
 }
 hr{
-	margin-bottom: -3%;
-	margin-top:3%;
-	width:98%;
+    margin-bottom: -20px;
+    margin-top: 20px;
+	width:96%;
 	color:#00ff3b;
 	border-color:#00ff3b;
+	 border: 0;
+  border-top: 1px solid #00ff3b;
+  border-bottom: 1px solid #fff;
+  margin-left:1%;
 	}
+.credits{
+	font-size: 12px;
+	line-height:18px;
+}
+.highlighted_words{
+	color: #00ff3b;
+}
 .popuplink{
+	text-underline-position: under;
+	text-underline-offset: 3px;
 	color:black;
 	text-decoration-color: #00ff3b;
 }
@@ -28,9 +40,10 @@ hr{
 .popup2_text{
 	position: absolute;
 	top: 0;
-	font-size: 100%;
-	white-space: break-spaces;
+	font-size: 18px;;
+	white-space: pre-wrap;
 	left: 4%;
+	line-height: 26px;
 	}
 	.modal {
 	display: none; /* Hidden by default */
@@ -58,7 +71,7 @@ hr{
 	position: absolute; /* Stay in place */
 	left: 29vw;
 	top: 10vh;
-	width: 660px; /* Full width */
+	width: 34%; /* Full width */
 	height: 550px; /* Full height */
 	overflow: scroll; /* Enable scroll if needed */
 	background:white;
@@ -128,9 +141,7 @@ height:60%;
 	font-weight: bold;
 	width: 20%;
 	}
-	.close img{
-	width:40%!important;
-	}
+
 
 .close_2{
 position: absolute; 
@@ -142,12 +153,12 @@ height:auto
 }
 
 #close_button{
-width:10vw!important;
-right:4vw;
-top:3vw;
+right:1vw;
+top:1vw;
 }
 .popup2_text{
-	width: 90%;
-    font-size: 90%;
+	//width: 90%;
+    font-size: 16px;
+	 white-space: pre-line;
 }
 	}

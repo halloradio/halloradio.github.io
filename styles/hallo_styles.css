@@ -55,15 +55,23 @@ hr{
 	height: 100%; /* Full height */
 	overflow: hidden;
 	}
+#poster_close{
+	z-index: 999;
+	color:black;
+	width: 30px; 
+	height:auto
+}
 #close_button{
 	position: absolute;
 	right:0;
 	z-index: 999;
 	color:black;
-	width:5%;
 	height:auto;
 	padding-top:1%;
 	padding-right:1%;
+	color:black;
+	width:35px; 
+	height:auto
 }
 .modal2 {
 	scrollbar-width: thin;
@@ -155,11 +163,12 @@ height:auto
 }
 
 #close_button{
+width: 30px!important;
 right:1vw;
 top:1vw;
 }
 .popup2_text{
-	//width: 90%;
+	width: 90%;
     font-size: 16px;
 	 white-space: pre-line;
 }

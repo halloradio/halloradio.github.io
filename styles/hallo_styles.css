@@ -79,7 +79,7 @@ hr{
 	position: absolute; /* Stay in place */
 	left: 29vw;
 	top: 10vh;
-	width: 34%; /* Full width */
+	width: 660px; /* Full width */
 	height: 550px; /* Full height */
 	overflow: scroll; /* Enable scroll if needed */
 	background:white;

@@ -12,10 +12,7 @@ hr{
   border-bottom: 1px solid #fff;
   margin-left:1%;
 	}
-.credits{
-	font-size: 12px;
-	line-height:18px;
-}
+
 .highlighted_words{
 	color: #00ff3b;
 }
@@ -55,6 +52,12 @@ hr{
 	height: 100%; /* Full height */
 	overflow: hidden;
 	}
+	
+.credits{
+	font-size: 12px;
+	line-height:18px;
+	display: block;
+}
 #poster_close{
 	z-index: 999;
 	color:black;

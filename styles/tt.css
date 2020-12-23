@@ -22,7 +22,7 @@ div#tt{
     /* grid-template-columns: 180px 200px auto 40px; */
     grid-template-areas:
             'playpause lwrap wrap_marquee'
-            'playpause  l_thu thu'
+            'playpause  l_thu thu' 
             'playpause l_fri fri'
             'playpause l_sat sat'
             'playpause l_sun sun'
@@ -168,7 +168,7 @@ div.days{
     font-size: 24px;
     padding: 1em;
     font-size: large;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     border-top: solid 0.35em #3b414d;
     /* border-left: solid 3em #3b414d; */
     list-style-type: none;

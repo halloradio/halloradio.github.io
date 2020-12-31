@@ -12,13 +12,16 @@ body{
     src: url("../font/Cadiz-Regular.otf");
 }
 
+
+
 div#tt{
    
     margin: auto;
     position: relative;
     font-family: Cadiz;
     display: grid;
-    grid-template-columns: auto 4em 9fr;
+    grid-template-columns: auto 3em 9fr;
+    /* grid-template-rows: auto 4em 9fr; */
     /* grid-template-columns: 180px 200px auto 40px; */
     grid-template-areas:
             'playpause lwrap wrap_marquee'
@@ -175,6 +178,7 @@ div.days{
 }
 
 div.weekday h1{
+    font-size: 24px;
     writing-mode: vertical-rl;
     text-align: center;
     text-orientation: mixed;
@@ -196,7 +200,9 @@ img.wave{
 
 
 @media (max-width:885px) { 
-
+    h1{
+        font-size: 20px;   
+       }
     
     div#lwrap{
         display: none;

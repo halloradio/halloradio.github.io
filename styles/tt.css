@@ -40,11 +40,15 @@ div#tt{
 
 div#btnImp{
     font-family: Cadiz;
-    font-size: 46px;
+    font-size: 36px;
    background-color: lightcoral;
     grid-area: imp;
 }
-
+.impI{
+	position: absolute;
+	left: 0.75em;
+	bottom: 0;
+}
 
 div.weekday{
     display: flex;

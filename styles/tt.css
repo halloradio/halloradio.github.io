@@ -25,10 +25,10 @@ div#tt{
     /* grid-template-columns: 180px 200px auto 40px; */
     grid-template-areas:
             'playpause lwrap wrap_marquee'
-            'playpause  l_thu thu' 
+            'playpause l_thu thu' 
             'playpause l_fri fri'
             'playpause l_sat sat'
-            'playpause l_sun sun'
+            'imp l_sun sun'
             ;
             /* grid-template-rows: 100px 300px; */
     border: solid .5em #3b414d;
@@ -37,6 +37,14 @@ div#tt{
     /* width: 55em; */
     /* overflow: scroll; */
 }
+
+div#btnImp{
+    font-family: Cadiz;
+    font-size: 46px;
+   background-color: lightcoral;
+    grid-area: imp;
+}
+
 
 div.weekday{
     display: flex;

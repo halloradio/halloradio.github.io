@@ -7,20 +7,23 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Styles -->
-
-    <link rel="stylesheet" href="styles/styles.css">
+    
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/hallo_styles.css">
     <link rel="stylesheet" href="styles/audio.css">
     <link rel="stylesheet" href="styles/tt.css">
     <!-- Javascript -->
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/audio.js"></script>
+    <script type="text/javascript" src="/js/impressumModal.js"></script> 
     <script src="js/metaJQ.js"></script>
 
 </head>
 
 <body>
-    <div id="wrapper">
+    
 
+    <div id="wrapper">
         <div id="tt">
             <!-- Audio Button Element -->
 
@@ -32,6 +35,10 @@
                 <div id="songPlayPause">
                 </div>
             </div>
+
+            <!-- <div id="btnImp">
+                <h2>i</h2>
+            </div> -->
 
             <div class="weekday" id="lwrap"></div>
 
@@ -53,12 +60,11 @@
             </div>
             <div class="days" id="thu">
                 <ul>       
-                    <li><span class="tt_span">1520</span><span> Potpourri der Viersamkeit POSSY CCC Beitrag</span></li>
-                    <li><span class="tt_span">1600</span><span> infoquelle </span></li>
-                    <li><span class="tt_span">1800</span><span> The Bad Boy Jesus City Swimming Show </span></li>
-                    <li><span class="tt_span">1910</span><span> "Fernweh" - DJ Abrissbirne - 24/09 (Archiv) </span></li>
-                    <li><span class="tt_span">2010</span><span> **toomuchfuture** - Leeza </span></li>
-                    <li><span class="tt_span">2110</span><span> Gewitterradio </span></li>
+                    <li><span class="tt_span">1700</span><span> Methoden - Ortwin 3000</span></li>
+                    <li><span class="tt_span">1600</span><span> **toomuchfuture** - Päd </span></li>
+                    <li><span class="tt_span">2000</span><span> Action Radio Show </span></li>
+                    <li><span class="tt_span">2100</span><span> The Hustle No. 22 - Bae Blade </span></li>
+
                  
                 </ul>
             </div>
@@ -67,8 +73,10 @@
             </div>
             <div class="days" id="fri">
                 <ul>
-                    <li><span class="tt_span">1800</span><span> Difficult Music For Difficult People</span></li>
-                    <li><span class="tt_span">2000</span><span> Neoprimitive </span></li>
+                    <li><span class="tt_span">1600</span><span> fuego</span></li>
+                    <li><span class="tt_span">1800</span><span> WEEKS w/ NAS TEA</span></li>
+                    <li><span class="tt_span">1930</span><span> "Sextou" 2 - Caio & Lotta - 30/10 </span></li>
+                    <li><span class="tt_span">2100</span><span> CROSSING BORDERS</span></li>
                 </ul>
             </div>
             <div class="weekday" id="label_sat">
@@ -76,8 +84,10 @@
             </div>
             <div class="days" id="sat">
                 <ul>
-                <li><span class="tt_span">1700</span><span> Orangen Martin: one, two, three — no bodies, please (RIP MF DOOM)</span></li>
-                <li><span class="tt_span">1900</span><span> Vinka Katt</span></li>                  
+                <li><span class="tt_span">1730</span><span> POSSYCAST - CHO ROOM</span></li>                  
+                <li><span class="tt_span">1830</span><span> Nice Nice Radio</span></li>                  
+                <li><span class="tt_span">2000</span><span> 3 Card Molly</span></li>                  
+                <li><span class="tt_span">2200</span><span> H:R vaults</span></li>                  
                 </ul>
             </div>
 
@@ -86,10 +96,12 @@
             </div>
             <div class="days" id="sun">
                 <ul>
-                    <li><span class="tt_span">1200</span><span> Sensazione Domenica</span></li>
-                    <li><span class="tt_span">1500</span><span> ChaiTimes Mag</span></li>
-                    <li><span class="tt_span">1700</span><span> "Sunday Brunch Session" 01 - Space Gaze - 31/05 (Archiv)</span></li>
-                    <li><span class="tt_span">2000</span><span> Dancefloor Requirement Planning</span></li>
+                    <li><span class="tt_span">1200</span><span> Bad Trip & Friends</span></li>
+                    <li><span class="tt_span">1500</span><span> Johannes - 23/08 (Archiv)</span></li>
+                    <li><span class="tt_span">1600</span><span>  Honey Bucket - 06/09 (Archiv)</span></li>
+                    <li><span class="tt_span">1800</span><span> Gemischte Gefühle - Alice</span></li>
+                    <li><span class="tt_span">1900</span><span> Lekka Mozzek - Anatoli</span></li>
+                    <li><span class="tt_span">2200</span><span> H:R vaults</span></li>
                 </ul>
             </div>
             <!-- <div id="waves_tt"></div> -->
@@ -104,6 +116,33 @@
     </div>
 <!-- Festspiele -->
 
+<div id="secondModal" class="modal2 show">
+  <!-- Modal content -->
+  <div class="modal2-content">
+  <span class="close_2"><img id="close_button" style="color:black;width:15px; height:auto" src="./img/Kreuz.svg"></span>
+<span class="popup2_text">
+    <h2>Impressum</h2>  
+    <hr>
+    Angaben gemäß § 5 TMG:
+    Josephine Schimmer
+    HALLO: Verein zur Förderung raumöffnender Kultur e.V.
+    Bullerdeich 14b
+    20537 Hamburg
 
+    Vertreten durch:
+    Dorothee Halbrock, Daniel Dominguez Teruel, Alice Barkhausen
+
+    Kontakt:
+    hallo@hallohallohallo.org
+
+    Registereintrag:
+    Eintragung im Vereinsregister. Registergericht: Hamburg, Registernummer: VR 22565
+
+    Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
+    Hallo: Verein zur Förderung raumöffnender Kultur e.V.
+    Wir sind nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</span>
+  </div>
+</div>
+  
 </body>
 </html>

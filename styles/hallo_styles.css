@@ -1,0 +1,151 @@
+hr{
+	margin-bottom: -3%;
+	margin-top:3%;
+	width:98%;
+	/* color:#00ff3b; */
+	/* border-color:#00ff3b; */
+	}
+.popuplink{
+	color:black;
+	/* text-decoration-color: #00ff3b; */
+}
+.modal2::-webkit-scrollbar {
+	width: 12px;               /* width of the entire scrollbar */
+}
+.modal2::-webkit-scrollbar-track {
+	background: #cbcbcb;        /* color of the tracking area */
+}
+.modal2::-webkit-scrollbar-thumb {
+	background-color: black;    
+	border-radius: 20px;       
+	border: 3px solid black;  
+}
+.show{
+    display:none;
+}
+
+.popup2_text{
+	position: absolute;
+	top: 0;
+		font-size: 1.4em;
+		white-space: break-spaces;
+		left: 4%;
+	}
+	.modal {
+	display: none; /* Hidden by default */
+	position: absolute; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 35vw;
+	top: 5vh;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: hidden;
+	}
+#close_button{
+	position: absolute;
+	right:0;
+	z-index: 999;
+	color:black;
+	width:5%;
+	height:auto;
+	padding-top:1%;
+	padding-right:1%;
+}
+.modal2 {
+    
+	scrollbar-width: thin;
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute; /* Stay in place */
+	left: 31vw;
+	top: 10vh;
+	width: 660px; /* Full width */
+	height: 550px; /* Full height */
+	overflow: scroll; /* Enable scroll if needed */
+	background: #cbcbcb;
+	scrollbar-color: black #cbcbcb;
+	overflow-x: hidden;
+	}
+	
+
+	/* Modal Content/Box */
+/* .modal-content {
+	position: absolute;
+	background-image: url('plakat.png');
+	background-repeat: no-repeat;
+	width: 460px;
+	height:inherit;
+	} */
+
+	/* The Close Button */
+	.close {
+	position: absolute;
+	right: 4%;
+	top:1%;
+	color: #aaa;
+	font-weight: bold;
+	}
+
+.close:hover,
+.close:focus {
+	text-decoration: none;
+	cursor: pointer;
+	}
+	
+.close_2:hover,
+.close_2:focus {
+	text-decoration: none;
+	cursor: pointer;
+	}
+	
+	
+@media only screen and (max-device-width: 480px) {
+	.modal{
+	z-index:10;
+	left:0;
+	}
+.modal2{
+z-index:5;
+left:0;
+width:100%;
+font-size:1.8em;
+height:60%;
+}
+.modal-content {
+    position: absolute;
+    background-image: url('plakat.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    background-size: contain;
+
+}
+.close{
+	position: absolute;
+	right: -8%;
+	top:1%;
+	color: #aaa;
+	font-weight: bold;
+	width: 20%;
+	}
+	.close img{
+	width:40%!important;
+	}
+
+.close_2{
+position: absolute; 
+right:0;
+color:black;
+width:5%; 
+height:auto
+
+}
+
+#close_button{
+width:6vw!important;
+right:2vw;
+top:1vw;
+}
+.popup2_text{
+	font-size: 1em;
+}
+}

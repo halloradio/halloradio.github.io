@@ -34,7 +34,7 @@ div#tt{
     border: solid .5em #3b414d;
     min-height: 100vh;
     
-    /* width: 55em; */
+    /* width: 90%; */
     /* overflow: scroll; */
 }
 
@@ -198,12 +198,9 @@ div.weekday h1{
 
 }
 div.weekday {
-    
     align-items: center;
     justify-content: center;
-
 }
-
 
 /* Pictures */
 img.wave{
@@ -233,7 +230,10 @@ img.wave{
         border-top: 0;
     }
 
-   
+    div#btnImp{
+        display: none;
+    }
+
     
     div#tt{
         grid-template-columns: 1fr;
@@ -270,7 +270,6 @@ img.wave{
     }
     div.weekday {
         padding: 1.4em 0.5em;
-
         border-top: solid 0.35em #3b414d;
         background-color: initial;
         justify-content: flex-start;
@@ -284,9 +283,7 @@ img.wave{
     div#marquee{
         /* position: ; */
         bottom: 0;
-
         /* height: 10em; */
-
     }
     div#info_mob{
         display: block;
@@ -294,14 +291,8 @@ img.wave{
         top: 0;
         left: 0;
         color: #cbcbcb;
-        /* padding: 1em; */
-        /* height: 100%; */
-        /* padding-bottom: 1em; */
         text-align: start;
         width: 80vw;
         height: auto;
-
     }
-
-    
 }

@@ -15,20 +15,9 @@ window.addEventListener('load', function () {
   btn.onclick = function() {   
     console.log("nabdwdkjandansdlkj")
     document.getElementById("secondModal").classList.toggle("show");
-  
-    // if(!open){
-    //   modal.style.display = "block";
-    //   open = false;
-    // }else{
-    //   modal.style.display = "none";
-    //   open = true;
-    // }
+
   }
-// When the user clicks on the button, open the modal
-
-
-// When the user clicks on <span> (x), close the modal
   span_close.onclick = function() {
-    modal.style.display = "none";
+    document.getElementById("secondModal").classList.toggle("show");
   }
 });

@@ -6,7 +6,9 @@ hr{
 	/* border-color:#00ff3b; */
 	}
 
-
+.impI:hover{
+	cursor: pointer;
+}
 
 .popuplink{
 	color:black;
@@ -55,7 +57,6 @@ hr{
 	padding-right:1%;
 }
 .modal2 {
-    
 	scrollbar-width: thin;
 	font-family: Arial, Helvetica, sans-serif;
 	position: absolute; /* Stay in place */

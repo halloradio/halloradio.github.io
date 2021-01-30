@@ -14,7 +14,7 @@ body{
 
 a.pp_link{
     text-decoration: none;
-    color: #FD6152;
+    color: black;
 }
 a:hover {
     cursor: pointer;

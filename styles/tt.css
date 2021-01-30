@@ -12,7 +12,14 @@ body{
     src: url("../font/Cadiz-Regular.otf");
 }
 
-
+a.pp_link{
+    text-decoration: none;
+    color: #FD6152;
+}
+a:hover {
+    cursor: pointer;
+    color: #FD6152;
+  }
 
 div#tt{
    

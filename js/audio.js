@@ -15,7 +15,7 @@
             if (activeSong.paused) {
                 activeSong.play();
                 button.style.backgroundImage = "url(img/pause.svg)";
-        
+                
             } else {
                 activeSong.pause();
                 console.log("off");

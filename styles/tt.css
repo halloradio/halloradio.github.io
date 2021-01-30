@@ -14,11 +14,11 @@ body{
 
 a.pp_link{
     text-decoration: none;
-    color: black;
+    color: #FD6152;
 }
 a:hover {
     cursor: pointer;
-    color: #FD6152;
+    color: black;
   }
 
 div#tt{

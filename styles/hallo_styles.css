@@ -2,28 +2,28 @@ hr{
 	margin-bottom: -3%;
 	margin-top:3%;
 	width:98%;
-	/* color:#00ff3b; */
-	/* border-color:#00ff3b; */
-	}
+}
 
 .impI:hover{
 	cursor: pointer;
 }
+
+
 
 .popuplink{
 	color:black;
 	/* text-decoration-color: #00ff3b; */
 }
 .modal2::-webkit-scrollbar {
-	width: 12px;               /* width of the entire scrollbar */
+	width: 5px;               /* width of the entire scrollbar */
 }
 .modal2::-webkit-scrollbar-track {
 	background: #cbcbcb;        /* color of the tracking area */
 }
 .modal2::-webkit-scrollbar-thumb {
 	background-color: black;    
-	border-radius: 20px;       
-	border: 3px solid black;  
+	border-radius: 0;       
+	/* border: 3px solid black;   */
 }
 .show{
     display:none;
@@ -47,7 +47,7 @@ hr{
 	overflow: hidden;
 	}
 #close_button{
-	position: absolute;
+	position: relative;
 	right:0;
 	z-index: 999;
 	color:black;
@@ -58,9 +58,9 @@ hr{
 }
 .modal2 {
 	scrollbar-width: thin;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Cadiz;
 	position: absolute; /* Stay in place */
-	left: 31vw;
+	left: 0vw;
 	top: 10vh;
 	width: 660px; /* Full width */
 	height: 550px; /* Full height */
@@ -70,16 +70,6 @@ hr{
 	overflow-x: hidden;
 	}
 	
-
-	/* Modal Content/Box */
-/* .modal-content {
-	position: absolute;
-	background-image: url('plakat.png');
-	background-repeat: no-repeat;
-	width: 460px;
-	height:inherit;
-	} */
-
 	/* The Close Button */
 	.close {
 	position: absolute;
@@ -108,21 +98,15 @@ hr{
 	left:0;
 	}
 .modal2{
-z-index:5;
-left:0;
-width:100%;
-font-size:1.8em;
-height:60%;
+	z-index:5;
+	left:0;
+	width:100%;
+	font-size:1.8em;
+	height:60%;
 }
-.modal-content {
-    position: absolute;
-    background-image: url('plakat.png');
-    background-repeat: no-repeat;
-    width: 100%;
-    height: inherit;
-    background-size: contain;
 
-}
+
+
 .close{
 	position: absolute;
 	right: -8%;
@@ -136,18 +120,18 @@ height:60%;
 	}
 
 .close_2{
-position: absolute; 
-right:0;
-color:black;
-width:5%; 
-height:auto
+	position: absolute; 
+	right:0;
+	color:black;
+	width:5%; 
+	height:auto
 
 }
 
 #close_button{
-width:6vw!important;
-right:2vw;
-top:1vw;
+	width:6vw!important;
+	right:2vw;
+	top:1vw;
 }
 .popup2_text{
 	font-size: 1em;

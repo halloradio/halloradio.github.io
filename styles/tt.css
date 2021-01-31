@@ -13,6 +13,7 @@ body{
 }
 
 a.pp_link{
+    
     text-decoration: none;
     color: #FD6152;
 }
@@ -22,7 +23,6 @@ a:hover {
   }
 
 div#tt{
-   
     margin: auto;
     position: relative;
     font-family: Cadiz;
@@ -46,9 +46,10 @@ div#tt{
 }
 
 div#btnImp{
-    font-family: Cadiz;
+    font-family: Cad
+    iz;
     font-size: 36px;
-   background-color: lightcoral;
+   /* background-color: lightcoral; */
     grid-area: imp;
 }
 .impI{
@@ -171,19 +172,28 @@ div#sun{
     height: fit-content;
 }
 
-li{
-    list-style: none;
+
+
+ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 4.7em;
 }
 
-span.tt_span::after{
-    content: '';
-    display: inline-block;
+span.tt_span::after {
+	content: "";
+	position: absolute;
+    left: 0;
     height: 1em;
     width: 4em;
+    /* padding-right: 4em; */
+    /* padding-left: 4em; */
     background-image: url("../img/wave.png");
     background-size: 4em;
     background-repeat: no-repeat;
 }
+
 
 div.days{
     /* position: relative; */
@@ -225,6 +235,7 @@ img.wave{
     }
 
     div.days{
+        word-wrap: no-wrap;
         font-size: 16px;
         padding: 0.5em;
         /* font-size: large; */

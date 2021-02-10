@@ -8,8 +8,6 @@ hr{
 	cursor: pointer;
 }
 
-
-
 .popuplink{
 	color:black;
 	/* text-decoration-color: #00ff3b; */
@@ -30,12 +28,12 @@ hr{
 }
 
 .popup2_text{
-	position: absolute;
-	top: 0;
+		position: absolute;
+		top: 0;
 		font-size: 1.4em;
-		white-space: break-spaces;
-		left: 4%;
-	}
+		white-space: pre-wrap;
+		left: 1em;
+}
 	.modal {
 	display: none; /* Hidden by default */
 	position: absolute; /* Stay in place */
@@ -51,7 +49,7 @@ hr{
 	right:0;
 	z-index: 999;
 	color:black;
-	width:5%;
+	width:51%;
 	height:auto;
 	padding-top:1%;
 	padding-right:1%;
@@ -75,7 +73,7 @@ hr{
 	position: absolute;
 	right: 4%;
 	top:1%;
-	color: #aaa;
+	color: black;
 	font-weight: bold;
 	}
 
@@ -92,17 +90,19 @@ hr{
 	}
 	
 	
-@media only screen and (max-device-width: 480px) {
+@media screen and (max-width: 680px) {
 	.modal{
 	z-index:10;
 	left:0;
+	height:100%;
+	width:100%;
 	}
 .modal2{
 	z-index:5;
 	left:0;
 	width:100%;
 	font-size:1.8em;
-	height:60%;
+	height:100%;
 }
 
 

@@ -1,0 +1,156 @@
+hr{
+	margin-bottom: -3%;
+	margin-top:3%;
+	width:98%;
+}
+
+.impI:hover{
+	cursor: pointer;
+}
+
+.popuplink{
+	color:black;
+	/* text-decoration-color: #00ff3b; */
+}
+.modal2::-webkit-scrollbar {
+	width: 5px;               /* width of the entire scrollbar */
+}
+.modal2::-webkit-scrollbar-track {
+	background: white;        /* color of the tracking area */
+}
+.modal2::-webkit-scrollbar-thumb {
+	background-color: black;    
+	border-radius: 0;       
+	/* border: 3px solid black;   */
+}
+.show{
+    display:none;
+}
+
+.popup2_text{
+		position: absolute;
+		top: 0;
+		font-size: 1.4em;
+		white-space: pre-wrap;
+		left: 1em;
+}
+	
+.modal {
+	display: none; /* Hidden by default */
+	position: absolute; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 35vw;
+	top: 5vh;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: hidden;
+}
+
+#close_button{
+	position: relative;
+	right:0;
+	z-index: 999;
+	color:black;
+	width:51%;
+	height:auto;
+	padding-top:1%;
+	padding-right:1%;
+}
+
+.modal2 {
+	scrollbar-width: thin;
+	font-family: Cadiz;
+	position: absolute; /* Stay in place */
+	left: 0vw;
+	top: 10vh;
+	width: 660px; /* Full width */
+	height: 550px; /* Full height */
+	overflow: scroll; /* Enable scroll if needed */
+	background: #cbcbcb;
+	scrollbar-color: black #cbcbcb;
+	overflow-x: hidden;
+	}
+	
+	/* The Close Button */
+	.close {
+	position: absolute;
+	right: 4%;
+	top:1%;
+	color: black;
+	font-weight: bold;
+	}
+
+.close:hover,
+.close:focus {
+	text-decoration: none;
+	cursor: pointer;
+	}
+	
+.close_2:hover,
+.close_2:focus {
+	text-decoration: none;
+	cursor: pointer;
+	}
+	
+	
+@media screen and (max-width: 680px) {
+	
+span#xKanal{
+    position: absolute;
+    left: 50%;
+    top: 0em;
+    /* flex: 1; */
+    /* text-align: center;
+    align-self: center;
+    font-size: 26px; */
+    color: #e31dd4;
+    cursor: pointer;
+}
+
+	
+	.modal{
+	z-index:10;
+	left:0;
+	height:100%;
+	width:100%;
+	}
+.modal2{
+	z-index:5;
+	left:0;
+	width:100%;
+	font-size:1.8em;
+	height:100%;
+}
+
+
+
+.close{
+	position: absolute;
+	right: -8%;
+	top:1%;
+	color: #aaa;
+	font-weight: bold;
+	width: 20%;
+	}
+	.close img{
+	width:40%!important;
+	}
+
+.close_2{
+	position: absolute; 
+	right:0;
+	color:black;
+	width:5%; 
+	height:auto
+
+}
+
+#close_button{
+	width:6vw!important;
+	right:2vw;
+	top:1vw;
+}
+.popup2_text{
+	font-size: 1em;
+}
+}

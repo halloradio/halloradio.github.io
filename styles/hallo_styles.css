@@ -30,6 +30,7 @@ span#xKanal{
 
 
 .xkanalImg{
+	
 	max-width: 100%;
   	height: auto;
 }
@@ -61,7 +62,7 @@ span#xKanal{
 }
 
 .modal {
-
+	transition: ease-in-out 1.5s;
 	z-index: 99;
 	image-rendering: auto;
 	scrollbar-width: thin;

@@ -153,31 +153,40 @@ window.addEventListener('load', function () {
 
                         // console.log(response.currentShow[0].name);
 
-                        let insert = "<span class='dot'></span>" + " ON AIR " + "<span class='dot'></span> " + name + " <span class='dot'></span>" + " ON AIR " + "<span class='dot'></span>" + " Hallo:Radio ";
+                        // let insert = name;
                         
-                        insert+=insert;
+                        // insert+=insert;
 
-                        document.querySelector("#info_side_text").innerHTML = "<span id='first'>" + insert + "</span>" + "<span id='sec'>" + insert + "</span>";
+                        // document.querySelector("#info_side_text").innerHTML = name;
 
-                        document.querySelector("#info_side_text").style.animation = "marquee 25s linear infinite;";
+                        // document.querySelector("#info_side_text").style.animation = "marquee 25s linear infinite;";
 
-                        reloadStylesheets();
+                        // reloadStylesheets();
 
                     } else{
 
                         document.getElementById("info_text").innerHTML = "NOT ON AIR";
 
 
-                        let insert = "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + "  NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR ";
+                        // let insert = "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + "  NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR " + "<span class='dot'></span>" + " NOT ON AIR ";
 
-                        document.querySelector("#info_side_text").innerHTML = "<span id='first'>" + insert + "</span>" + "<span id='sec'>" + insert + "</span>";
+                        // document.querySelector("#info_side_text").innerHTML = "<span id='first'>" + insert + "</span>" + "<span id='sec'>" + insert + "</span>";
 
-                        document.querySelector("#info_side_text").style.animation = "none";
+                        // document.querySelector("#info_side_text").style.animation = "none";
                     }
                 }
             }
         });
     }
+
+
+    $(document).ajaxComplete(function(){
+        if($('#elementID').length != 0) {
+            $('#elementID').css('position', 'absolute');
+        }
+    });
+
+
     ajaxFn(); //we CALL the function we stored 
 
     timeOutId = setTimeout(ajaxFn, 150000);

@@ -1,0 +1,96 @@
+div#videoBackground{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* position:fixed;
+    z-index: -1; */
+}
+
+/* div.wrapper{
+    overflow-x: initial;
+} */
+div#wrapAll{
+    overflow-x: hidden;
+}
+ 
+
+
+/* div#wrapper{
+    display: none;
+} */
+
+div#info{
+    color: white;
+    font-family: AkzidGrtsk;
+    position: absolute;
+    bottom: 1em;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+     overflow-x: hidden;
+    /* overflow: hidden; */
+  
+  }
+
+span#arrowButton{
+    color: white;
+    z-index: 13;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 1em;
+    display: block; 
+    font-size: 72px;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+span#arrowButton:hover{
+    cursor: pointer;
+}
+
+
+
+div.translateUp{
+    transition: ease-in-out 1s;
+    transform: translateY(-100%);
+}
+
+div.opacitySlow{
+    transition: ease-in-out 1s;
+    opacity: 1;
+}       
+/* 
+@media (max-width:885px) { 
+    .wrapper{
+        overflow-y: scroll;
+        
+    }
+} */
+
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #myVideo { 
+        width:auto;
+        height: 100%;
+    }
+}
+/* @media (max-width: 767px) {
+    #myVideo {
+        width: 100%;
+        height: auto;
+        transform: rotate(90deg);       
+    }
+  
+} */

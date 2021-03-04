@@ -10,6 +10,25 @@
     src: url("../font/Cadiz-Regular.otf");
 }
 
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+::-webkit-scrollbar {
+	width: 5px;               /* width of the entire scrollbar */
+}
+::-webkit-scrollbar-track {
+	background: white;        /* color of the tracking area */
+}
+::-webkit-scrollbar-thumb {
+	background-color: black;    
+	border-radius: 0;       
+	/* border: 3px solid black;   */
+}
+
 body{
     background-color: #000;
     /* font-size: 16px; */

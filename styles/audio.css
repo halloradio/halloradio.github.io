@@ -1,30 +1,48 @@
 #songPlayPause {
     grid-area: playpause;
-    position: absolute;
+    position: relative;
+    z-index: 99;
     /* bottom: 1em;
     right: 1em; */
     height: 5em;
     width: 5em;
-    padding: 1em;
+    /* padding: 1em; */
 
-    transition: ease-in-out 0.25s;
+    transition: ease-in-out 0.5s;
 
     background: url(../img/play.svg);
     background-size: contain;
     
 }
+#songPlayPause:hover{
+    cursor: pointer;
+}
+
    #playwrap {
+    /* width: 5em; */
     padding: 0.6em;
    }
 
 @media (max-width:885px) { 
-    #songPlayPause {
-   
-
- 
-    
-
-        
+    /* #songPlayPause {
+     
+        right: 0;
     }
+    #playwrap {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color:#3b414d;
+        padding: 1em;
+        position: fixed;
+        padding-right: 1em;
+        
+        bottom: 0em;
+        right: 0em;
+        z-index: 3;
+
+    } */
 }
  

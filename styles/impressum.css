@@ -1,0 +1,44 @@
+div#impressum{
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: inline-block;
+    font-family: Cadiz;
+    text-align: justify;
+    background-color: #ff7b01;
+    padding: 1em;
+    border: solid .3em #3b414d;
+    z-index: 90;
+    top:0;
+    right: -100vw;
+    width: 100vw;
+    height: auto;
+    transition: ease-in-out 1s;
+}
+
+div.iText{ 
+    padding-top: 5em;
+    position: relative;
+    overflow: hidden;
+    /* overflow-x: hidden; */
+    /* height: 100%; */
+}
+/* @media (max-width:885px) {  */
+    
+@media (min-width: 885px) {
+    div.iText{ 
+        padding-top: 0;
+        height: auto;
+    }
+   
+    div#impressum{
+       
+        height: 70%;
+        right: -30em;
+        width: 30em;
+        /* bottom: 2em; */
+    }
+}
+
+
+

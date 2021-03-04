@@ -39,44 +39,20 @@ h1.festspiele{
    color: #bf038b; 
 }
 
-/* @font-face {
-    font-family: AkzidGrtsk;
-    src: url("../font/AkzidGrtskProReg_0.otf");
-} */
-/* @font-face {
-    font-family: Keroine-DouxExtreme;
-    src: url("../font/Keroine-DouxExtreme.otf");
-} */
-/* fe4728 */
-
-
-/* div#wrapper {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
- 
-
-    background-repeat: no-repeat;
-
-    
-} */
-
-/* 
-@media (max-width:760px) { 
-  
-} */
  
 
 @media (max-width: 767px) {
-    #songPlayPause {
+    /* #songPlayPause {
         overflow: hidden;
         
-    }
+    } */
 
     #myVideo {
         display: none;
     }
-    body {
+    div#ofWrapper {
+        width: 100vw;
+        height: 100vh;
         background: url('../img/still.PNG');
         background-size: cover;
     }

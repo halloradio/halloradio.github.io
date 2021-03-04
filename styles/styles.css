@@ -61,12 +61,23 @@ h1.festspiele{
     
 } */
 
-
+/* 
 @media (max-width:760px) { 
+  
+} */
+ 
+
+@media (max-width: 767px) {
     #songPlayPause {
         overflow: hidden;
         
     }
-}
- 
 
+    #myVideo {
+        display: none;
+    }
+    body {
+        background: url('../img/still.PNG');
+        background-size: cover;
+    }
+}

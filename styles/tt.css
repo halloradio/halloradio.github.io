@@ -7,11 +7,13 @@ body{
     /* scrollbar-width: none;  Firefox */
 /* } */
 
-@font-face {
+div#info{
     font-family: Cadiz;
-    src: url("../font/Cadiz-Regular.otf");
 }
 
+div.date{
+    font-family: Cadiz;
+}
 
 div#wrapper{
  

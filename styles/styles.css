@@ -5,10 +5,9 @@
     letter-spacing: 0.05em;
     box-sizing: border-box;
 }
-div#ofWrapper{
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
+@font-face {
+    font-family: Cadiz;
+    src: url("../font/Cadiz-Regular.otf");
 }
 
 body{
@@ -21,14 +20,14 @@ h1.festspiele{
    color: #bf038b; 
 }
 
-@font-face {
+/* @font-face {
     font-family: AkzidGrtsk;
     src: url("../font/AkzidGrtskProReg_0.otf");
-}
-@font-face {
+} */
+/* @font-face {
     font-family: Keroine-DouxExtreme;
     src: url("../font/Keroine-DouxExtreme.otf");
-}
+} */
 /* fe4728 */
 
 

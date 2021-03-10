@@ -86,7 +86,7 @@ span#xKanal{
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	width: 600px; 
+	width: 550px; 
 	height: auto; 
 	/* overflow: scroll; */
 	/* background: #cbcbcb;
@@ -113,15 +113,7 @@ span#xKanal{
 
 	
 	
-@media screen and (max-width: 380px) {
-
-	.modal{
-	z-index:99;
-	left:0;
-	top: 1em;
-	width: 100vw;
-	transform: translate(0%, 0%);
-	}
+@media  (max-width: 380px) {
 
 .close{
 	position: absolute;
@@ -143,7 +135,7 @@ span#xKanal{
 
 }
 
-@media (max-width:885px) {
+@media (max-width:425px) {
 	span#xKanal{
 		position: absolute;
 		/* left: 50%; */
@@ -157,14 +149,19 @@ span#xKanal{
 		color: #e31dd4;
 		cursor: pointer;
 	}
-	.modal {
-		top: 0;
-		left: 0;
+	
+		.modal {
+			/* top: 50%;
+			left: 50%; */
+			
+			/* top: 0em; */
+			/* transform: none; */
+			/* height: 100vh; */
+			height: auto;
 		
-		transform: none;
-		width: 100%;
-	}
+			width: 95vw;
+		}
+	
 
  }
-
 

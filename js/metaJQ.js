@@ -122,7 +122,7 @@ window.addEventListener('load', function () {
                     clearTimeout(timeOutId); //stop the timeout
                 } else {
 
-                    timeOutId = setTimeout(ajaxFn, 30000); //set the timeout again
+                    timeOutId = setTimeout(ajaxFn, 150000); //set the timeout again
                     console.log("call"); //check if this is running
                     console.table(response.current); //check if this is running
 
@@ -181,21 +181,21 @@ window.addEventListener('load', function () {
 
 
     $(document).ajaxComplete(function(){
-        if($('#infoText').length != 0) {
-            $('#infoText').css('position', 'absolute');
+        if($('#elementID').length != 0) {
+            $('#elementID').css('position', 'absolute');
         }
     });
 
 
-    ajaxFn(); 
+    ajaxFn(); //we CALL the function we stored 
 
-    timeOutId = setTimeout(ajaxFn, 30000);
+    timeOutId = setTimeout(ajaxFn, 150000);
 
-    // function reloadStylesheets() {
-    //     var queryString = '?reload=' + new Date().getTime();
-    //     $('link[rel="stylesheet"]').each(function () {
-    //         this.href = this.href.replace(/\?.*|$/, queryString);
-    //     });
-    // }
+    function reloadStylesheets() {
+        var queryString = '?reload=' + new Date().getTime();
+        $('link[rel="stylesheet"]').each(function () {
+            this.href = this.href.replace(/\?.*|$/, queryString);
+        });
+    }
 
 }());

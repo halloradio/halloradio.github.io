@@ -1,8 +1,4 @@
-/* hr{
-	margin-bottom: -3%;
-	margin-top:3%;
-	width:98%;
-} */
+
 
 span#close{
     display: none;
@@ -13,55 +9,75 @@ span.xActive{
     transform: rotate(45deg);
 }
 
+div.closeX {
+	transition: ease-in-out 0.5s;
+	/* transform: skew(deg); */
+	/* transform-origin: 0 0; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.closeX:before, .closeX:after {
+  position: absolute;
+  left: 24px;
+  content: ' ';
+  height: 54px;
+  width: 5px;
+  background-color: #fff;
+}
+
+.closeX:before {
+  /* transform: rotate(45deg); */
+}
+.closeX:after {
+  /* transform: rotate(-45deg); */
+  transform: rotate(90deg);
+}
+
+/* .closeX:hover{
+	transform: skew(40deg);
+} */
+
 span#xKanal{
+	position: relative;
 	transition: ease-in-out 0.5s;
     /* transform: rotate(45deg); */
 	z-index: 99;
     position: absolute;
-    left: 50%;
-    top: 4em;
+    /* left: 50%; */
+	top: 1.3em;
+	right: 1em;
+    /* right: 2em;
+    top: 4em; */
+	width: 54px;
+	height: 54px;
     /* flex: 1; */
     /* text-align: center;
     align-self: center;
     font-size: 26px; */
-    color: #e31dd4;
+    /* background-color: #e31dd4; */
     cursor: pointer;
+
 }
+
 
 .xkanalImg{
 	max-width: 100%;
   	height: auto;
 }
 
-.modal::-webkit-scrollbar {
-	width: 5px;               /* width of the entire scrollbar */
-}
-.modal::-webkit-scrollbar-track {
-	background: white;        /* color of the tracking area */
-}
-.modal::-webkit-scrollbar-thumb {
-	background-color: black;    
-	border-radius: 0;       
-	/* border: 3px solid black;   */
-}
 
 .show{
     display:none;
+	opacity: 1;
 }
 
-#close_button{
-	position: relative;
-	right:0;
-	z-index: 999;
-	color:black;
-	width:51%;
-	height:auto;
-	padding-top:1%;
-	padding-right:1%;
-}
 
 .modal {
-	transition: ease-in-out 1.5s;
+	/* transition: ease-in-out .5s; */
+	/* opacity: 0; */
 	z-index: 99;
 	image-rendering: auto;
 	scrollbar-width: thin;
@@ -70,7 +86,7 @@ span#xKanal{
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	width: 350px; 
+	width: 600px; 
 	height: auto; 
 	/* overflow: scroll; */
 	/* background: #cbcbcb;
@@ -102,7 +118,7 @@ span#xKanal{
 	.modal{
 	z-index:99;
 	left:0;
-	top: 16px;
+	top: 1em;
 	width: 100vw;
 	transform: translate(0%, 0%);
 	}
@@ -130,14 +146,23 @@ span#xKanal{
 @media (max-width:885px) {
 	span#xKanal{
 		position: absolute;
-		left: 50%;
-		top: 3em;
+		/* left: 50%; */
+		top: 1.3em;
+		right: 1em;
+
 		/* flex: 1; */
 		/* text-align: center;
 		align-self: center;
 		font-size: 26px; */
 		color: #e31dd4;
 		cursor: pointer;
+	}
+	.modal {
+		top: 0;
+		left: 0;
+		
+		transform: none;
+		width: 100%;
 	}
 
  }

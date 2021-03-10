@@ -15,6 +15,7 @@ window.addEventListener('load', function () {
  
   document.getElementById("xKanalModal").classList.toggle("show");
   document.getElementById("xKanal").classList.toggle("xActive");
+  
   // xkanalImg
 
 
@@ -25,8 +26,8 @@ window.addEventListener('load', function () {
 
 
   btn.onclick = function() {   
-    document.getElementById("wrapper").classList.toggle("show");
-   
+    document.getElementById("xKanalModal").classList.toggle("show");
+    document.getElementById("xKanal").classList.toggle("xActive");
     // document.getElementsByClassName(".xk").classList.toggle("xActive");
   }
   modalClose.onclick = function() {

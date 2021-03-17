@@ -5,106 +5,43 @@
     letter-spacing: 0.05em;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: Cadiz;
+    src: url("../font/Cadiz-Regular.otf");
+}
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 body{
     background-color: #000;
     /* font-size: 16px; */
-   
-}
-
-div#flexit{
-    display: flex;
-    justify-content: baseline;
-}
-
-div#bg_gif{
-    position: absolute;
     overflow: hidden;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    background: url('../img/fest02_.gif');
-    /* transform: rotate(90deg); */
-    background-size: cover;
+}
 
-    animation-name: example;
-    animation-duration: 60s;
-        /* filter: hue-rotate(0deg); */
-        /* background-repeat: no-repeat;  */
-        animation-iteration-count: infinite;
-    /* background-repeat: no-repeat;  */
+h1.festspiele{
+   color: #bf038b; 
 }
 
 
-@keyframes example {
-    from {filter: hue-rotate(0deg);}
-    to {filter: hue-rotate(360deg);}
-  }
-
-/* #fest02_img{
-    position: absolute;
-    z-index: -3;
-    transform: rotate(-90deg);
-
-    height: auto;
-    width: 100%;
-} */
-
-
-@media (min-width:760px) { 
-    div#bg_gif{
+@media (max-width: 767px) {
+    /* #songPlayPause {
         overflow: hidden;
-        /* left: 0;
-        top: 0; */
-        height: 100%;
-        width: 100%;
-        background: url('../img/fest02_rotate_.gif');
-        background-size: cover;
-        /* background-size: contain; */
-        animation-name: example;
-        animation-duration: 60s;
-        /* filter: hue-rotate(0deg); */
-        /* background-repeat: no-repeat;  */
-        animation-iteration-count: infinite;
         
+    } */
+
+    #myVideo {
+        display: none;
     }
-
-    
-
-
-
-    #songPlayPause {
-        overflow: hidden;
+    div#ofWrapper {
+        width: 100vw;
+        height: 100vh;
+        background: url('../img/still.PNG');
+        background-size: cover;
     }
 }
- 
-
-
-
-
-@font-face {
-    font-family: AkzidGrtsk;
-    src: url("../font/AkzidGrtskProReg_0.otf");
-}
-@font-face {
-    font-family: Keroine-DouxExtreme;
-    src: url("../font/Keroine-DouxExtreme.otf");
-}
-/* fe4728 */
-
-div#wrapper {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    /* background-image: url('../img/hallo.jpg'); */
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center; */
-    /* background-attachment: fixed; */
-    /* overflow: hidden; */
-    
-}
-
-

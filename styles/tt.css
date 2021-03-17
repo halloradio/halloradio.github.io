@@ -7,61 +7,54 @@ body{
     /* scrollbar-width: none;  Firefox */
 /* } */
 
-@font-face {
+div#info{
     font-family: Cadiz;
-    src: url("../font/Cadiz-Regular.otf");
 }
 
-
-a.pp_link{
-    
-    text-decoration: none;
-    color: #FD6152;
+div.date{
+    font-family: Cadiz;
 }
-a:hover {
-    cursor: pointer;
-    color: black;
-  }
+
+div#wrapper{
+ 
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: ease-in-out 1s;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #ff7b01;
+    width: 100%;
+}
 
 div#tt{
+ 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #ff7b01;
     margin: auto;
     position: relative;
     font-family: Cadiz;
     display: grid;
-    grid-template-columns: auto 3em 9fr;
+    grid-template-columns: 6em 3em 9fr;
     /* grid-template-rows: auto 4em 9fr; */
     /* grid-template-columns: 180px 200px auto 40px; */
     grid-template-areas:
-            'playpause lwrap wrap_marquee'
-            'playpause l_thu thu' 
-            'playpause l_fri fri'
-            'playpause l_sat sat'
-            'imp l_sun sun'
-            ;
+    'playpause lwrap wrap_marquee'
+    'playpause l_thu thu' 
+    'playpause l_fri fri'
+    'playpause l_sat sat'
+    'playpause l_sun sun'
+    ;
             /* grid-template-rows: 100px 300px; */
-    border: solid .5em #3b414d;
+    border: solid .35em #000a06;
     min-height: 100vh;
-    
-    /* width: 90%; */
-    /* overflow: scroll; */
 }
 
-div#btnImp{
-    font-family: Cad
-    iz;
-    font-size: 36px;
-   /* background-color: lightcoral; */
-    grid-area: imp;
-}
-.impI{
-	position: absolute;
-	left: 0.75em;
-	bottom: 0;
-}
 
 div.weekday{
     display: flex;
-    background-color: #3b414d;
+    background-color: #000a06;;
     
 }
 
@@ -83,12 +76,14 @@ div#label_sun{
 }
 
 div#wrap_marq{
+    height: 5em;
     position: relative;
     overflow: hidden;
 }
 
 
 div#marquee {
+    /* position: relative; */
     letter-spacing: 0.1;
     font-family: AkzidGrtsk;
     overflow: hidden;
@@ -147,13 +142,14 @@ div#date{
         padding-bottom: 0.2em;
 
         text-align: end;
-        color: #3b414d;
+        color: #000a06;
 }
 
 
 div#thu{
     grid-area: thu;
     border-bottom: none;
+    /* border-top: none; */
     /* border-right: 4px; */
 }
 
@@ -170,7 +166,13 @@ div#sat{
 div#sun{
     display: inline-block;
     grid-area: sun;
-    height: fit-content;
+    height: 15em;
+    /* height: fit-content; */
+}
+.space{
+    display: inline-block;
+    grid-area: space;
+
 }
 
 
@@ -181,27 +183,36 @@ ul {
 	margin-left: 0;
 	padding-left: 4.7em;
 }
+span.tt_span{
+    color: white;
+    padding-right: 1em;
+}
 
 span.tt_span::after {
-	content: "";
+    color: #000a06;
+    /* color: palevioletred; */
+    content: url(../img/Welle/4.svg);
 	position: absolute;
     left: 0;
     height: 1em;
     width: 4em;
     /* padding-right: 4em; */
     /* padding-left: 4em; */
-    background-image: url("../img/wave.png");
-    background-size: 4em;
-    background-repeat: no-repeat;
+    /* background-image: url("../img/Welle/4.svg"); */
+    /* background-size: 4em;
+    background-repeat: no-repeat; */
 }
 
+/* h1.dayH1{
+    color: #bf038b;
+} */
 
 div.days{
     /* position: relative; */
     font-size: 24px;
     padding: 1em;
     font-size: large;
-    border-top: solid 0.35em #3b414d;
+    border-top: solid 0.25em #000a06;
     /* border-left: solid 3em #3b414d; */
     list-style-type: none;
     /* overflow: hidden; */
@@ -227,6 +238,38 @@ img.wave{
 
 
 @media (max-width:885px) { 
+    div#wrapper{
+        margin-top: 7em;
+        /* border-top: none; */
+    }
+    ul {
+        position: relative;
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0em;
+    }
+    span.tt_span{
+        color: white;
+        /* padding-right: 3em; */
+    }
+    
+    span.tt_span::after {
+        /* display: none; */
+        color: #000a06;
+        content: url(../img/Welle/5.svg);
+        position: absolute;
+        display: none;
+        /* left: 4; */
+        /* height: 1em; */
+        width: 4em;
+        /* padding-right: 4em; */
+        /* padding-left: 4em; */
+        /* background-image: url("../img/Welle/4.svg");
+        background-size: 4em;
+        background-repeat: no-repeat; */
+    }
+
+
     h1{
         font-size: 20px;   
        }
@@ -235,10 +278,12 @@ img.wave{
         display: none;
     }
 
+
+
     div.days{
         word-wrap: no-wrap;
         font-size: 16px;
-        padding: 0.5em;
+        padding: 1em;
         /* font-size: large; */
         font-weight: normal;
         /* border-top: none; */
@@ -256,11 +301,12 @@ img.wave{
     
     div#tt{
         grid-template-columns: 1fr;
-        grid-template-rows: 5em 2.5em 1fr 2.5em 1fr 2.5em 1fr 2.5em 1fr minmax(5em,15em);
-        /* grid-template-rows: auto; */
+        /* grid-template-rows: 5em 2.5em 1fr 2.5em 1fr 2.5em 1fr 2.5em 1fr minmax(5em,15em); */
+        /* grid-template-rows: auto 2.5em 1fr 2.5em 1fr 2.5em 1fr 2.5em 1fr minmax(5em,15em); */
+        grid-template-rows: auto;
         /* grid-template-columns: 180px 200px auto 40px; */
         grid-template-areas:
-                'wrap_marquee'
+               
                 'l_thu'
                 'thu'
                 'l_fri'
@@ -269,7 +315,9 @@ img.wave{
                 'sat'
                 'l_sun'
                 'sun'
-                'playpause'
+                /* 'playpause' */
+                /* /* 'wrap_marquee' */
+                'wrap_marquee' 
                 ;
                 /* grid-template-rows: 100px 300px; */
         /* border: 0;
@@ -285,11 +333,13 @@ img.wave{
     div.weekday h1{
         writing-mode: initial;
         text-align: left;
-        color: #3b414d;
+        color: black;
     }
     div.weekday {
-        padding: 1.4em 0.5em;
-        border-top: solid 0.35em #3b414d;
+        /* padding: 1.4em 1em 0.5em 0.5em;
+        padding: 0.5em; */
+        padding: 1.4em 1em;
+        border-top: solid 0.35em #000a06;
         background-color: initial;
         justify-content: flex-start;
     }

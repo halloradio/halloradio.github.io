@@ -2,6 +2,20 @@
 
     window.addEventListener('load', function () {
 
+    /**
+     * Video 
+     */
+    let video = document.getElementById('myVideo');
+
+    if($(window).width() <= 767){
+        $(video).remove();
+    }
+    
+
+    /**
+     * Audio
+     */
+
       // Steuerung des Audio Elements aber mit anderem button - durch id und angehängtem event listener wird das <audio> element getriggert
         let clickToPlay = document.querySelector('#songPlayPause');
 

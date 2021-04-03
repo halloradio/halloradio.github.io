@@ -2,7 +2,7 @@
 
 window.addEventListener('load', function () {
 
-    var header = document.getElementById("wrap_marq");
+var header = document.getElementById("wrap_marq");
 
 
 header.onscroll = function() {myFunction()};

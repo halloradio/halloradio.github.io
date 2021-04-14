@@ -2,13 +2,13 @@
 
     window.addEventListener('load', function () {
 
-         var btn = document.getElementById("impButton");
+        var btn = document.getElementById("impButton");
 
-         btn.onclick = function() {   
-           document.getElementById("impressum").classList.toggle("translateIn");
-           document.getElementById("impButton").classList.toggle("turnaround");
-           console.log("click Imporessum")
-         }
+        btn.onclick = function () {
+            document.getElementById("impressum").classList.toggle("translateIn");
+            document.getElementById("impButton").classList.toggle("turnaround");
+            console.log("click Imporessum")
+        }
 
         /**
          * Video 
@@ -22,7 +22,6 @@
         for (var i = 0; i < sources.length; i++) {
             sources[i].setAttribute('src', sources[i].getAttribute('data-src'));
         }
-        // If for some reason we do want to load the video after, for desktop as opposed to mobile (I'd imagine), use videojs API to load
 
         if (w >= 767) {
             video.load();

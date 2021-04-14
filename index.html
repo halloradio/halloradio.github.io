@@ -1,203 +1,193 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HALLO: Radio</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Styles -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HALLO: Radio</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Styles -->
 
-    <link rel="icon" type="image/svg" href="./img/play.svg" />
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <!-- <link rel="stylesheet" type="text/css" href="styles/hallo_styles.css"> -->
-    <link rel="stylesheet" href="styles/audio.css">
-    <link rel="stylesheet" href="styles/video.css">
-    <link rel="stylesheet" href="styles/tt.css">
-    <link rel="stylesheet" href="styles/menu.css">
-    <link rel="stylesheet" href="styles/impressum.css">
-    <!-- Javascript -->
-    <script src="js/audio.js"></script>
-    <!-- <script type="text/javascript" src="/js/impressum.js"></script> -->
-    <script type="text/javascript" src="/js/timetable.js"></script>
-    <!-- <script type="text/javascript" src="/js/scroll.js"></script>  -->
-    <script src="js/metaJQ.js"></script>
+	<link rel="icon" type="image/svg" href="./img/play.svg" />
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<!-- <link rel="stylesheet" type="text/css" href="styles/hallo_styles.css"> -->
+	<link rel="stylesheet" href="styles/audio.css">
+	<link rel="stylesheet" href="styles/video.css">
+	<link rel="stylesheet" href="styles/tt.css">
+	<link rel="stylesheet" href="styles/menu.css">
+	<link rel="stylesheet" href="styles/impressum.css">
+	<!-- Javascript -->
+	<script src="js/audio.js"></script>
+	<!-- <script type="text/javascript" src="/js/impressum.js"></script> -->
+	<script type="text/javascript" src="/js/timetable.js"></script>
+	<!-- <script type="text/javascript" src="/js/scroll.js"></script>  -->
+	<script src="js/metaJQ.js"></script>
 </head>
 
 <body style="overflow: hidden; position: fixed;">
 
-    <div id="ofWrapper">
+	<div id="ofWrapper">
 
-        <div id="wrapAll">
+		<div id="wrapAll">
 
-            <div id="videoBackground">
+			<div id="videoBackground">
 
-                <!-- <video autoplay muted loop id="myVideo">
+				<!-- <video autoplay muted loop id="myVideo">
                     <source src="./video/festspiele.mp4" type="video/mp4">
                 </video> -->
-                
-                <video autoplay muted id="myVideo">    
-                    <source data-src="./video/festspiele.mp4" type="video/mp4">
-                    <!-- <source data-src="somevideo.mp4"> -->
-                 </video>
-                
-                <div id="impressum">
-                    <div class="iText">
-                        <h2 class="i">impressum</h2>
-                        <br>
-                        <span>
-                            Angaben gemäß § 5 TMG:
-                        </span>
-                        <p>
-                            Josephine Schimmer
-                            HALLO: Verein zur Förderung raumöffnender Kultur e.V.
-                            Bullerdeich 14b
-                            20537 Hamburg
-                        </p>
-                        <br>
-                        <h3>
-                            Vertreten durch:
-                        </h3>
-                        <p>
-                            Dorothee Halbrock, Daniel Dominguez Teruel, Alice Barkhausen
-                        </p>
-                        <br>
-                        <h3>
-                            kontakt:
-                        </h3>
-                        <p>
-                            halloradio@headshell.net
-                        </p>
-                        <br>
-                        <h3>
-                            Registereintrag:
-                        </h3>
 
-                        <p>
-                            Eintragung im Vereinsregister. Registergericht: Hamburg, Registernummer: VR 22565
+				<video autoplay loop muted id="myVideo">
+					<source data-src="./video/festspiele.mp4" type="video/mp4">
+					<!-- <source data-src="somevideo.mp4"> -->
+				</video>
 
-                            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-                            Hallo: Verein zur Förderung raumöffnender Kultur e.V.
-                            Wir sind nicht verpflichtet, an Streitbeilegungsverfahren vor einer
-                            Verbraucherschlichtungsstelle teilzunehmen.
-                        </p>
+				<div id="impressum">
+					<div class="iText">
+						<h2 class="i">impressum</h2>
+						<br>
+						<span>
+							Angaben gemäß § 5 TMG:
+						</span>
+						<p>
+							Josephine Schimmer
+							HALLO: Verein zur Förderung raumöffnender Kultur e.V.
+							Bullerdeich 14b
+							20537 Hamburg
+						</p>
+						<br>
+						<h3>
+							Vertreten durch:
+						</h3>
+						<p>
+							Dorothee Halbrock, Daniel Dominguez Teruel, Alice Barkhausen
+						</p>
+						<br>
+						<h3>
+							kontakt:
+						</h3>
+						<p>
+							halloradio@headshell.net
+						</p>
+						<br>
+						<h3>
+							Registereintrag:
+						</h3>
 
-                    </div>
-                </div>
+						<p>
+							Eintragung im Vereinsregister. Registergericht: Hamburg, Registernummer: VR 22565
 
+							Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
+							Hallo: Verein zur Förderung raumöffnender Kultur e.V.
+							Wir sind nicht verpflichtet, an Streitbeilegungsverfahren vor einer
+							Verbraucherschlichtungsstelle teilzunehmen.
+						</p>
 
-                <div id="menuBG">
-                    <div id=date>
-                        <h1>01.-04.04
-                        </h1>
-                    </div>
-                </div>
-
-                <div id="menu">
-                    <div id="songPlayPause">
-                    </div>
-                    <div id="gui">
-
-                        <div id="ttButton">
-
-                        </div>
-                        <div id="impButton">
-                        </div>
-                    </div>
+					</div>
+				</div>
 
 
-                </div>
+				<div id="menuBG">
+					<div id=date>
+						<h1>15.-18.04
+						</h1>
+					</div>
+				</div>
 
-                <div id="playwrap">
-                    <div id=info>
-                        <p>Now Playing:</p>
+				<div id="menu">
+					<div id="songPlayPause">
+					</div>
+					<div id="gui">
 
-                        <h1 id="info_text">loading...</h1>
+						<div id="ttButton">
 
-                    </div>
-                </div>
-            </div>
-            <audio id="song">
-                <source src="https://streamhalloradio.out.airtime.pro/streamhalloradio_a" type="audio/mp3" />
-            </audio>
-        </div>
-       
-        <div id="wrapper">
-            <div id="tt">
-                <div class="weekday" id="lwrap"></div>
-                <div id="wrap_marq">
-                    <div id="marquee">
-                        <p id="info_side_text">
-                        </p>
-                    </div>
-                </div>
-
-                <div class="weekday" id="label_thu">
-                    <h1 class="dayH1">THU</h1>
-                </div>
-                <div class="days" id="thu">
-                    <ul>
-                        <li><span class="tt_span">1400</span><span>mia hadžikadunić - lass baldrian tropfen</span></li>
-                        <li><span class="tt_span">1500</span><span>LoaMauna & Bodo Adriano </span></li>
-                        <li><span class="tt_span">1700</span><span>RVDS</span></li>
-                        <li><span class="tt_span">1900</span><span>**toomuchfuture** – dsty_</span></li>
-                        <li><span class="tt_span">2000</span><span>Action Radio Show »fitness edition« w/ Robin Tasi, DJ MELL G, aitch, DJ Memory Card, DJ Max Power</span></li>
-                        <li><span class="tt_span">2130</span><span>The Hustle No. 25 - Johannermarie</span></li>
-                    </ul>
-                </div>
-
-                <div class="weekday" id="label_fri">
-                    <h1 class="dayH1">FRI</h1>
-                </div>
-                <div class="days" id="fri">
-                    <ul>
-                        <li><span class="tt_span">1500</span><span>DAVID KECK</span></li>
-                        <li><span class="tt_span">1630</span><span>WEEKS w/ NAS TEA & Illen</span></li>
-                        <li><span class="tt_span">1800</span><span>Difficult Music For Difficult People </span></li>
-                        <li><span class="tt_span">2000</span><span>Distorted Memo Express seq 6 w/ Elazer</span></li>
-                    </ul>
-                </div>
-                <div class="weekday" id="label_sat">
-                    <h1 class="dayH1">SAT</h1>
-                </div>
-                <div class="days" id="sat">
-                    <ul>
-                        <li><span class="tt_span"></span><span>Headshell Geburtstag</span></li>
-                        <li><span class="tt_span">1400</span><span>Mauricio & Fernando Rari</span></li>
-                        <li><span class="tt_span">1600</span><span>Bumy D</span></li>
-                        <li><span class="tt_span">1700</span><span>Die große Plattenversteigerung</span></li>
-                        <li><span class="tt_span">1900</span><span>Lorenzo&Taxi Marianne&Birdman&Jake</span></li>
-                        <li><span class="tt_span">2200</span><span>FFaux LIVE</span></li>
-                        <li><span class="tt_span">2300</span><span>Schulverweis LIVE</span></li>
-                        <li><span class="tt_span">0000</span><span>Dietroiter</span></li>
-                        <li><span class="tt_span">0200</span><span>NewInfluenzer</span></li>
-                        <li><span class="tt_span">0300</span><span>Best Boy Electric & DJ AOL</span></li>
-                        <li><span class="tt_span">0500</span><span>Die Chemiker</span></li>
-
-                    </ul>
-                </div>
-
-                <div class="weekday" id="label_sun">
-                    <h1 class="dayH1">SUN</h1>
-                </div>
-                <div class="days" id="sun">
-                    <ul>
-                        <li><span class="tt_span">1200</span><span>Jonas Pelle</span></li>
-                        <li><span class="tt_span">1500</span><span>Chaitimes Magazine w/ Sinh Tai</span></li>
-                        <li><span class="tt_span">1700</span><span>Daniel Dominguez - FEEL THE FEELINGS</span></li>
-                        <li><span class="tt_span">2000</span><span>Dancefloor Requirement Planning</span></li>
+						</div>
+						<div id="impButton">
+						</div>
+					</div>
 
 
-                    </ul>
-                </div>
-                <!-- <div id="waves_tt"></div> -->
-            </div>
+				</div>
 
-            <!-- <div id="tt_img"><img src="./img/timetable.jpg" alt=""></div> -->
+				<div id="playwrap">
+					<div id=info>
+						<p>Now Playing:</p>
 
-        </div>
+						<h1 id="info_text">loading...</h1>
 
-    </div>
+					</div>
+				</div>
+			</div>
+			<audio id="song">
+				<source src="https://streamhalloradio.out.airtime.pro/streamhalloradio_a" type="audio/mp3" />
+			</audio>
+		</div>
+
+		<div id="wrapper">
+			<div id="tt">
+				<div class="weekday" id="lwrap"></div>
+				<div id="wrap_marq">
+					<div id="marquee">
+						<p id="info_side_text">
+						</p>
+					</div>
+				</div>
+
+				<div class="weekday" id="label_thu">
+					<h1 class="dayH1">THU</h1>
+				</div>
+				<div class="days" id="thu">
+					<ul>
+						<li><span class="tt_span">1500</span><span>MC Schmalz</span></li>
+						<li><span class="tt_span">1700</span><span>infoquelle</span></li>
+						<li><span class="tt_span">1900</span><span>Electric Gym - newinfluenzer</span></li>
+						<li><span class="tt_span">2000</span><span>**toomuchfuture** - päd						</span></li>
+						<li><span class="tt_span">2100</span><span>MICHAELBRAILEY</span></li>
+					</ul>
+				</div>
+
+				<div class="weekday" id="label_fri">
+					<h1 class="dayH1">FRI</h1>
+				</div>
+				<div class="days" id="fri">
+					<ul>
+						<li><span class="tt_span">1500</span><span>CHO ROOM</span></li>
+						<li><span class="tt_span">1600</span><span>fuego</span></li>
+						<li><span class="tt_span">1800</span><span>ZERO KARMA</span></li>
+						<li><span class="tt_span">2000</span><span>Methoden</span></li>
+					</ul>
+				</div>
+				<div class="weekday" id="label_sat">
+					<h1 class="dayH1">SAT</h1>
+				</div>
+				<div class="days" id="sat">
+					<ul>
+						<li><span class="tt_span">1500</span><span>POSSYCAST - MJ from the block</span></li>
+						<li><span class="tt_span">1600</span><span>Nice Nice Radio</span></li>
+						<li><span class="tt_span">1800</span><span>DJ AOL</span></li>
+					</ul>
+				</div>
+
+				<div class="weekday" id="label_sun">
+					<h1 class="dayH1">SUN</h1>
+				</div>
+				<div class="days" id="sun">
+					<ul>
+						<li><span class="tt_span">1430</span><span>Der verlängerte Atem</span></li>
+						<li><span class="tt_span">1630</span><span>radiodoro mit traashboo</span></li>
+						<li><span class="tt_span">1800</span><span>Alice, Jake, Lorenzo</span></li>
+						<li><span class="tt_span">2000</span><span>HALLO: Radio</span></li>
+
+
+					</ul>
+				</div>
+				<!-- <div id="waves_tt"></div> -->
+			</div>
+
+			<!-- <div id="tt_img"><img src="./img/timetable.jpg" alt=""></div> -->
+
+		</div>
+
+	</div>
 
 </body>
 

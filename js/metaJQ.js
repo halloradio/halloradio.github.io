@@ -1,30 +1,65 @@
 // url: 'https://streamhalloradio.airtime.pro/api/live-info',
 
-window.addEventListener('load', function () {
-	fetch('https://streamhalloradio.airtime.pro/api/live-info')
-		.then(response => response.json())
-		.then(data => {
-			let infotext = document.getElementById('info_text');
-			console.log(data)
+window.addEventListener('load', function () {	
+	
+	fetchLiveInfo()
+			.then(data => {
+				setStatus(handleInfo(data));
+			})
+			.catch(err => {
+				infotext.innerHTML = "Error loading";
+				console.log("erororor" ,err)
+			})
+	
+		
+	}());
+	
+	setInterval( () => {
+		fetchLiveInfo()
+			.then(data => {
+				setStatus(handleInfo(data));
+			})
+			.catch(err => {
+				infotext.innerHTML = "Error loading";
+				console.log("erororor" ,err)
+			})
+		
+	}
+		, 3000);
 
-			if (data.current != null || data.currentShow.length > 0 ) {
-				console.log("currentshow.type:",data.currentShow.name)
-				if (data.currentShow.length != 0 && data.currentShow.length != null) {
-					if (data.currentShow.name != "") {
-						infotext.innerHTML = data.currentShow[0].name;
-						console.log("currentshow.name:",data.currentShow.name)
-					}
-					
-				} else if (data.current.type != "" && data.current != null) {
-					console.log("currentshow.type:",data.current.type)
-					infotext.innerHTML = data.current.type;
-				}
+
+function handleInfo(info) {
+	/** is Online */
+	if (info.current != null || info.currentShow.length > 0 ) {
+		/**  */
+		if (info.currentShow.length != 0 && info.currentShow.length != null) {
+			/** has name for the show */
+			if (info.currentShow.name != "") {
+				return info.currentShow[0].name;
 			}
-				else {
-					infotext.innerHTML = "Not on Air";
-				}
-		})
-		.catch(err => {
-			console.log(err)
-		});
-}());
+		/** Liveshow whithout name */
+		}else if (info.current.type != "" && info.current != null) {
+			return info.current.type;
+		}
+	}
+	return 'Not on Air';
+}
+
+function setStatus(status){
+	let infotext = document.getElementById('info_text');
+	return infotext.innerHTML = status;
+}
+
+
+async function fetchLiveInfo() {
+	const res = await fetch('https://streamhalloradio.airtime.pro/api/live-info');
+
+	if (!res.ok) {
+		const message = `An error has occured: ${res.status}`;
+		throw new Error(message);
+	}
+
+	const info = await res.json();
+	console.log(info)
+	return info;
+}

@@ -2,14 +2,8 @@
     grid-area: playpause;
     position: relative;
     z-index: 99;
-    /* bottom: 1em;
-    right: 1em; */
     height: 5em;
     min-width: 5em;
-    /* padding: 1em; */
-
-    transition: ease-in-out 0.5s;
-
     background: url(../img/play.svg);
     background-size: contain;
     

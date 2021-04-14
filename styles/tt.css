@@ -8,11 +8,11 @@ body{
 /* } */
 
 div#info{
-    font-family: Cadiz;
+    font-family: Cadiz, sans-serif;
 }
 
 div.date{
-    font-family: Cadiz;
+    font-family: Cadiz, sans-serif;
 }
 
 div#wrapper{
@@ -28,13 +28,12 @@ div#wrapper{
 }
 
 div#tt{
- 
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #ff7b01;
     margin: auto;
     position: relative;
-    font-family: Cadiz;
+    font-family: Cadiz, sans-serif;
     display: grid;
     grid-template-columns: 6em 3em 9fr;
     /* grid-template-rows: auto 4em 9fr; */
@@ -82,19 +81,6 @@ div#wrap_marq{
 }
 
 
-div#marquee {
-    /* position: relative; */
-    letter-spacing: 0.1;
-    font-family: AkzidGrtsk;
-    overflow: hidden;
-    /* grid-area: marq; */
-    /* position: relative; */
-    /* word-spacing: 0.1em; */
-    font-size: 26px;
-    /* line-height: 1.5em; */
-    white-space: nowrap;
-    /* text-transform: uppercase; */
-}
 
 #marquee p#info_side_text {
     position: absolute;
@@ -112,26 +98,12 @@ div#marquee {
 }
 
 
-@keyframes marquee {
-    0% {
-        left: 0;
-    }
-    
-    100% {
-        left: -50%;
-    }
-}
-
 div#info_mob{
     display: none;
 }
 
 div#date{
-    /* display: inline-block; */
-    /* text-align: end; */
-    /* font-size: xx-large; */
-    /* border-left: solid 1.7em #3b414d; */
-    /* border: solid 4px #3b414d; */
+
     border-bottom: none;
     grid-area: date;
         position: absolute;

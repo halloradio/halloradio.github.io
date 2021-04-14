@@ -19,8 +19,6 @@ div#gui{
     flex: 1;
 }
 
-
-
 .translateIn{
     transform: translateX(-100%);
 }

@@ -9,14 +9,11 @@
     font-family: Cadiz;
     src: url("../font/Cadiz-Regular.otf");
 }
-
-
+/* C:\Users\l\Documents\WEB\GIT_webpage_Hallo\halloradio.github.io\font\cadiz-regular-webfont.woff */
 
 ::-webkit-scrollbar {
     display: none;
 }
-
-
 
 body{
     background-color: #000;
@@ -30,11 +27,6 @@ h1.festspiele{
 
 
 @media (max-width: 767px) {
-    /* #songPlayPause {
-        overflow: hidden;
-        
-    } */
-
     #myVideo {
         display: none;
     }

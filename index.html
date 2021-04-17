@@ -10,7 +10,6 @@
 
 	<link rel="icon" type="image/svg" href="./img/play.svg" />
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<!-- <link rel="stylesheet" type="text/css" href="styles/hallo_styles.css"> -->
 	<link rel="stylesheet" href="styles/audio.css">
 	<link rel="stylesheet" href="styles/video.css">
 	<link rel="stylesheet" href="styles/tt.css">
@@ -18,9 +17,7 @@
 	<link rel="stylesheet" href="styles/impressum.css">
 	<!-- Javascript -->
 	<script src="js/audio.js"></script>
-	<!-- <script type="text/javascript" src="/js/impressum.js"></script> -->
 	<script type="text/javascript" src="/js/timetable.js"></script>
-	<!-- <script type="text/javascript" src="/js/scroll.js"></script>  -->
 	<script src="js/metaJQ.js"></script>
 </head>
 
@@ -94,7 +91,7 @@
 				</div>
 
 				<div id="menu">
-					<div id="songPlayPause">
+					<div id="songPlayPause" class="play">
 					</div>
 					<div id="gui">
 
@@ -104,8 +101,6 @@
 						<div id="impButton">
 						</div>
 					</div>
-
-
 				</div>
 
 				<div id="playwrap">
@@ -117,8 +112,8 @@
 					</div>
 				</div>
 			</div>
-			<audio id="song">
-				<source src="https://streamhalloradio.out.airtime.pro/streamhalloradio_a" type="audio/mp3" />
+			<audio preload="none" id="song">
+				<source id="audio-stream" src="https://streamhalloradio.out.airtime.pro/streamhalloradio_a" type="audio/mp3" />
 			</audio>
 		</div>
 
@@ -152,8 +147,8 @@
 					<ul>
 						<li><span class="tt_span">1500</span><span>CHO ROOM</span></li>
 						<li><span class="tt_span">1600</span><span>fuego</span></li>
-						<li><span class="tt_span">1800</span><span>ZERO KARMA</span></li>
-						<li><span class="tt_span">2000</span><span>Methoden</span></li>
+						<li><span class="tt_span">1900</span><span>ARCHIV "Lekka Mozzek" 02 - Comisarios De La Luz - 16/08</span></li>
+						<li><span class="tt_span">2000</span><span>Methoden - Brandon Marlo & Tilmann Tausendfreund</span></li>
 					</ul>
 				</div>
 				<div class="weekday" id="label_sat">
@@ -162,8 +157,9 @@
 				<div class="days" id="sat">
 					<ul>
 						<li><span class="tt_span">1500</span><span>POSSYCAST - MJ from the block</span></li>
-						<li><span class="tt_span">1600</span><span>Nice Nice Radio</span></li>
-						<li><span class="tt_span">1800</span><span>DJ AOL</span></li>
+						<li><span class="tt_span">1600</span><span>ARCHIV - DJ FATOU 11/09 OPENTHEGATE</span></li>
+						<li><span class="tt_span">1830</span><span>Nice Nice Radio - Galante El Elegante b2b Lory</span></li>
+						<li><span class="tt_span">2000</span><span>ARCHIV "Reminders of a time which will never come back ..." Ecco The the Dolphin & DJ AOL & Memo Ria- 10/19 </span></li>
 					</ul>
 				</div>
 
@@ -172,12 +168,11 @@
 				</div>
 				<div class="days" id="sun">
 					<ul>
+						<li><span class="tt_span">1230</span><span>ARCHIV Wally K - 19/07</span></li>
 						<li><span class="tt_span">1430</span><span>Der verlängerte Atem</span></li>
 						<li><span class="tt_span">1630</span><span>radiodoro mit traashboo</span></li>
 						<li><span class="tt_span">1800</span><span>Alice, Jake, Lorenzo</span></li>
 						<li><span class="tt_span">2000</span><span>HALLO: Radio</span></li>
-
-
 					</ul>
 				</div>
 				<!-- <div id="waves_tt"></div> -->

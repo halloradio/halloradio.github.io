@@ -27,6 +27,8 @@
             video.load();
         }
 
+
+
         /**
          * Audio
          */
@@ -35,21 +37,88 @@
         let clickToPlay = document.querySelector('#songPlayPause');
 
         clickToPlay.addEventListener('click', function () {
+            // let activeSong = document.getElementById('song');
 
-            let activeSong = document.getElementById('song');
+            // let audiostream = document.getElementById('audio-stream');
             button = document.getElementById('songPlayPause');
 
 
-            //Audio Start/Stop und Button-wechsel 
-            if (activeSong.paused) {
-                activeSong.play();
-                button.style.backgroundImage = "url(img/pause.svg)";
+            // var radiostream = document.getElementById('song');
 
-            } else {
-                activeSong.pause();
-                console.log("off");
-                button.style.backgroundImage = "url(img/play.svg)";
+            var radiostream = document.querySelector('#song');
+            // var pausePromise = pause();
+            // var playPromise = document.querySelector('#song').play();
+
+            // button.classList.add("pause");
+            // button.classList.toggle("turnaround");
+            
+
+            if(radiostream.paused){
+                button.classList.toggle("pause");
+                playOrPause(radiostream.load());
+                playOrPause(radiostream.play());
+                console.log("playpromise")
+            }else{
+                button.classList.toggle("pause");
+                playOrPause(radiostream.pause());
+                // radiostream.src = 'https://streamhalloradio.out.airtime.pro/streamhalloradio_a';
+                console.log("else - paused")
             }
+            
+            function playOrPause(status) {
+                if (status !== undefined) {
+                    status.then(function () {
+                        // Automatic playback started!
+                    }).catch(function (error) {
+                        console.log(error)
+                        // Automatic playback failed.
+                        // Show a UI element to let the user manually start playback.
+                    });
+                }
+            }
+
+           
+
+            // if(radiostream.play){
+            //     button.style.backgroundImage = "url(img/pause.svg)";
+            //     audiostream.pause();
+            //     audiostream.src = audiostream.src;
+            //     console.log("if play", radiostream)
+            // }else{
+            //     radiostream.play();
+            //     button.style.backgroundImage = "url(img/play.svg)";
+            //     console.log("else play", radiostream)
+            // }
+
+            // console.log(radiostream.play())
+            // console.log(audiostream)
+            // // radiostream.play();
+            // // audiostream.load();
+            // // audiostream.play();
+
+
+
+
+            // console.log(
+            //     playing ? 
+            // )
+            // console.log(playing)
+            //             if(!playing) {
+            //                 console.log("play ",playing)
+            //                 audiostream.src = '';
+            //                 playing = false; 
+            //                 console.log(activeSong)
+            //                 // activeSong.pause();
+            //                 // console.log("off");
+            //                 button.style.backgroundImage = "url(img/play.svg)";
+            //             } else {
+            //                 playing = true;
+            //                 console.log("emptyAudio")
+            //                 oldSrc = audiostream.src;               
+            //                 activeSong.play();
+            //                 button.style.backgroundImage = "url(img/pause.svg)";
+            //                 console.log("play ",playing)   
+            //             }
         });
     });
 }());

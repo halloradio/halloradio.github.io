@@ -4,10 +4,27 @@
     z-index: 99;
     height: 5em;
     min-width: 5em;
+    /* background: url(../img/play.svg);
+    background-size: contain;
+     */
+}
+
+
+.play{
     background: url(../img/play.svg);
     background-size: contain;
-    
 }
+
+.pause {
+    background: url(../img/pause.svg);
+    background-size: contain;
+}
+
+.turnWhileLoading{
+    transform: rotateX();
+}
+
+
 #songPlayPause:hover{
     cursor: pointer;
 }

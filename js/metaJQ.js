@@ -25,7 +25,7 @@ window.addEventListener('load', function () {
 			})
 		
 	}
-		, 3000);
+		, 15000);
 
 
 function handleInfo(info) {
@@ -60,6 +60,6 @@ async function fetchLiveInfo() {
 	}
 
 	const info = await res.json();
-	console.log(info)
+	// console.log(info)
 	return info;
 }

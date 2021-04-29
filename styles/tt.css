@@ -101,6 +101,9 @@ div#wrap_marq{
 div#info_mob{
     display: none;
 }
+div.headline{
+    padding-right: 1em;
+}
 
 div#date{
 
@@ -112,8 +115,8 @@ div#date{
         padding: 0.5em;
         padding-top: 1em;
         padding-bottom: 0.2em;
-
-        text-align: end;
+        display: flex;
+        /* text-align: end; */
         color: #000a06;
 }
 
@@ -210,6 +213,14 @@ img.wave{
 
 
 @media (max-width:885px) { 
+
+    div#date{
+        width: 100%;
+        display: flex;
+        /* margin-top: 11em; */
+        justify-content: space-between;
+    }
+
     div#wrapper{
         margin-top: 7em;
         /* border-top: none; */

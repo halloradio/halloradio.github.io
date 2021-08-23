@@ -16,17 +16,33 @@
 }
 
 body{
-    background-color: #000;
+    background-image: #000;
     /* font-size: 16px; */
     overflow: hidden;
 }
 
-h1.festspiele{
-   color: #bf038b; 
+
+
+.sommerpause{ 
+    font-family: Cadiz;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+.sommerpause h1{
+    font-size: 72px;
+    filter: invert(100%);
 }
 
-
 @media (max-width: 767px) {
+
+    .sommerpause h1{
+        font-size: 36px;
+    }
+
     #myVideo {
         display: none;
     }

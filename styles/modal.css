@@ -1,0 +1,33 @@
+#event-modal{
+    
+    position: fixed; 
+    overflow-y: scroll;
+    top: 0; right: 0; bottom: 0; left: 0; 
+    margin: auto;
+    /* background-color: green; */
+    /* position: absolute; */
+    max-width: 340px;
+    /* min-height: 100vh; */
+    /* display: flex; */
+    /* display: flex; */
+
+
+    z-index: 1111;
+    /* overflow: scroll; */
+}
+
+#event-modal img{
+    /* overflow-y: scroll; */
+    width: 100%;
+    height: auto;
+}
+
+.show{
+    display: none;
+}
+
+#open-modal{
+    position: absolute;
+    height: 85vh;
+    width: 100vw;
+}

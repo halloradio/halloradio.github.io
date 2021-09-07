@@ -14,23 +14,21 @@
 	<link rel="stylesheet" href="styles/video.css">
 	<link rel="stylesheet" href="styles/tt.css">
 	<link rel="stylesheet" href="styles/menu.css">
+	<link rel="stylesheet" href="styles/modal.css">
 	<link rel="stylesheet" href="styles/impressum.css">
 	<!-- Javascript -->
 	<script src="js/audio.js"></script>
 	<script type="text/javascript" src="/js/timetable.js"></script>
+	<script src="js/modal.js"></script>
 	<script src="js/metaJQ.js"></script>
 </head>
 
-<body style="overflow: hidden; position: fixed;">
-	
-	
-	<div class="sommerpause">
-		<h1>
-			Sommerpause
-		</h1>
+<body>	
+	<div id="event-modal" class="">
+		<img src="./img/spuckzelle.png" alt="">
 	</div>
 	
-	
+	<div id="open-modal"></div>
 
 	<div id="ofWrapper">
 		
@@ -95,7 +93,7 @@
 				<div id="menuBG">
 					<div id=date>
 						<h1>
-							01.08-23.09
+							10.09-11.09
 						</h1>
 					</div>
 				</div>
@@ -124,7 +122,7 @@
 				</div>
 			</div>
 			<audio preload="none" id="song">
-				<source id="audio-stream" src="https://streamhalloradio.out.airtime.pro/streamhalloradio_a" type="audio/mp3" />
+				<source id="audio-stream" src="https://halloradi0.out.airtime.pro/halloradi0_a" type="audio/mp3" />
 			</audio>
 		</div>
 
@@ -152,7 +150,8 @@
 				</div>
 				<div class="days" id="fri">
 					<ul>
-						
+						<li><span class="tt_span">1500 - 2200</span><span>HALLO: Radio Spuckzellenmodul live vom Alma-Wartenberg-Platz</span></li>
+			
 					</ul>
 				</div>
 				
@@ -162,6 +161,8 @@
 				
 				<div class="days" id="sat">
 					<ul>
+						<li><span class="tt_span">1500</span><span>HALLO: Radio Spuckzellenmodul live vom Alma-Wartenberg-Platz</span></li>
+						<li><span class="tt_span">2000 - 0200</span><span>ZEPTER x OSTERINSEL mit Ober Mannkind</span></li>
 					</ul>
 				</div>
 				

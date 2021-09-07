@@ -52,7 +52,7 @@ function setStatus(status){
 
 
 async function fetchLiveInfo() {
-	const res = await fetch('https://streamhalloradio.airtime.pro/api/live-info');
+	const res = await fetch('https://halloradi0.airtime.pro/api/live-info');
 
 	if (!res.ok) {
 		const message = `An error has occured: ${res.status}`;

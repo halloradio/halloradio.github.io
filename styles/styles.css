@@ -18,24 +18,11 @@
 body{
     background-image: #000;
     /* font-size: 16px; */
-    overflow: hidden;
+    height: 100vh;
+    /* overflow: hidden; */
+    position: fixed;
 }
 
-
-
-.sommerpause{ 
-    font-family: Cadiz;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-}
-.sommerpause h1{
-    font-size: 72px;
-    filter: invert(100%);
-}
 
 @media (max-width: 767px) {
 

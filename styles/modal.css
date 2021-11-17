@@ -27,7 +27,16 @@
 }
 
 #open-modal{
+    z-index: 88;
     position: absolute;
     height: 85vh;
     width: 100vw;
 }
+/*
+    Radio cafe
+*/
+
+.radio-cafe{
+    background-color: #ffff;
+}
+

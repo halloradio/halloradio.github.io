@@ -1,7 +1,7 @@
 #songPlayPause {
     grid-area: playpause;
     position: relative;
-    z-index: 99;
+    z-index: 50;
     height: 5em;
     min-width: 5em;
     /* background: url(../img/play.svg);

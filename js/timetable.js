@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
 
   document.getElementById("ttButton").classList.toggle("hello");
 
-  btn.onclick = function() {   
+  btn.onclick = function(event) {   
     document.getElementById("wrapper").classList.toggle("translateUp");
     document.getElementById("ttButton").classList.toggle("turnaround");
     document.getElementById("menuBG").classList.toggle("translateDown");

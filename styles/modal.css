@@ -1,42 +1,158 @@
-#event-modal{
-    
+.event-modal{
     position: fixed; 
     overflow-y: scroll;
-    top: 0; right: 0; bottom: 0; left: 0; 
-    margin: auto;
-    /* background-color: green; */
-    /* position: absolute; */
-    max-width: 340px;
-    /* min-height: 100vh; */
-    /* display: flex; */
-    /* display: flex; */
+    top: 2em; right: 0; bottom: 2em; left: 0; 
     
+    margin: auto;
 
-    z-index: 1111;
-    /* overflow: scroll; */
+    max-height: 54em;
+    max-width: 44em;
+    z-index: 100;
+    background-color: #33cb98;
 }
 
-#event-modal img{
-    /* overflow-y: scroll; */
-    width: 100%;
-    height: auto;
+a {
+    color: black;
 }
 
 .show{
     display: none;
 }
 
-#open-modal{
+/* #open-modal{
     z-index: 88;
     position: absolute;
     height: 85vh;
     width: 100vw;
-}
+} */
+
 /*
     Radio cafe
 */
 
-.radio-cafe{
+.bg-white{
     background-color: #ffff;
 }
 
+.radio-cafe{
+    padding: 2em;
+    height: 50em;
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: 2fr 1fr; */
+    grid-template-areas: 
+        "radiotext bengel"
+        "radiotext bengel"
+        "radiotext radiodates"
+    ;
+    font-family: Cadiz;
+    /* background-color: #ffff; */
+    padding-bottom: 3em;
+}
+
+.buttons-modal{
+    padding: 2em;
+    /* margin-left: 2em; */
+    /* margin-right: 10em; */
+    height: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close{
+    z-index: 9999;
+    background-image: url("../img/Kreuz.svg");
+    height: 1.5em;
+    width: 1.5em;
+    cursor: pointer;
+}
+
+.button-lang{
+    cursor: pointer;
+    font-family: Cadiz;
+    /* position: absolute; */
+    width: 6em;
+    /* width: auto; */
+    /* right: 0;
+    margin: 2em; */
+}
+
+.radio-bengel{
+    grid-area: bengel;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    /* margin-right: ; */
+    width: 15em;
+}
+
+.radio-text{
+    grid-area: radiotext;
+    overflow-y: visible;
+    width: 25em;
+    font-size: 14px;
+}
+.radio-text h1{
+    font-size: 44px;
+}
+
+.radio-dates{
+    grid-area: radiodates;
+    font-size: 14px;
+    border: 1px solid #000;
+    max-width: 17em;
+    max-height: 15em;
+    padding: 0.5em;
+}
+.radio-dates li{
+ list-style-type: none;
+}
+
+@media (max-width: 44em) {
+  .event-modal{
+    /* top: 0.5em; */
+    max-width: 25em;
+    /* z-index: 100; */
+    /* max-width: 70%; */
+    }
+
+    .close{
+        /* position: absolute; */
+
+        background-image: url("../img/Kreuz.svg");
+        height: 1.4em;
+        width: 1.4em;
+    }
+
+    .radio-cafe{
+        padding: 2em;
+        height: 50em;
+        width: 100%;
+        display: grid;
+        /* grid-template-columns: 2fr 1fr; */
+        grid-template-areas: 
+            "bengel"
+            "radiotext"
+            "radiodates"
+        ;
+        font-family: Cadiz;
+    }
+    
+    .radio-text{
+        /* overflow-x: hidden; */
+        width: 100%;
+        word-wrap: break-word;
+        margin-bottom: 3em;
+    }
+
+    .radio-dates{
+        margin-bottom: 13em;
+    }
+}
+
+@media (max-width: 309px) {
+    .radio-cafe{
+        padding:0.2em;
+    }
+}

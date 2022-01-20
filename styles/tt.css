@@ -23,14 +23,14 @@ div#wrapper{
     transition: ease-in-out 1s;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: #ff7b01;
+    background-color: #e1ec03;
     width: 100%;
 }
 
 div#tt{
     overflow-y: scroll;
     overflow-x: hidden;
-    background-color: #ff7b01;
+    background-color: #e1ec03;
     margin: auto;
     position: relative;
     font-family: Cadiz, sans-serif;

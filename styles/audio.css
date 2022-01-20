@@ -1,13 +1,16 @@
 #songPlayPause {
     grid-area: playpause;
     position: relative;
-    z-index: 50;
+    z-index: 99;
     height: 5em;
     min-width: 5em;
     /* background: url(../img/play.svg);
     background-size: contain;
      */
-}
+    margin-left: 1em;
+    margin-top: 1em;
+
+    }
 
 
 .play{

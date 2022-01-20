@@ -5,10 +5,10 @@ div#impressum{
     display: inline-block;
     font-family: Cadiz;
     text-align: justify;
-    background-color: #ff7b01;
+    background-color: #e1ec03;
     padding: 1em;
     border: solid .3em #3b414d;
-    z-index: 90;
+    z-index: 11;
     top:0;
     right: -100vw;
     width: 100vw;

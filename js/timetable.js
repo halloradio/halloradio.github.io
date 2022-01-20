@@ -3,9 +3,11 @@ window.addEventListener('load', function () {
 
   var btn = document.getElementById("ttButton");
 
-  document.getElementById("ttButton").classList.toggle("hello");
-
+  // document.getElementById("ttButton").classList.toggle("hello");
+  
+  
   btn.onclick = function(event) {   
+    document.getElementById("ttButton").classList.toggle("setborderleft");
     document.getElementById("wrapper").classList.toggle("translateUp");
     document.getElementById("ttButton").classList.toggle("turnaround");
     document.getElementById("menuBG").classList.toggle("translateDown");

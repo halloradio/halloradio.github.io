@@ -61,7 +61,7 @@
             }else{
                 button.classList.toggle("pause");
                 playOrPause(radiostream.pause());
-                // radiostream.src = 'https://streamhalloradio.out.airtime.pro/streamhalloradio_a';
+                // radiostream.src = 'https://halloradi0.out.airtime.pro/halloradi0_a';
                 console.log("else - paused")
             }
             
